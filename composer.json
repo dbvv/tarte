@@ -1,6 +1,6 @@
 {
-    "name": "dbvv/glossier",
-    "description": "Understrap child theme for glossier.ru.com",
+    "name": "dbvv/tarte",
+    "description": "Understrap child theme for glossier.ru.com family tarte",
     "type": "library",
     "license": "GPL-2.0",
     "minimum-stability": "stable",

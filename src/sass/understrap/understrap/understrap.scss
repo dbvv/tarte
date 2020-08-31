@@ -102,7 +102,6 @@ a.skip-link {
 }
 
 .navbar-light .navbar-brand a {
-    font-size: 50px;
      color: $navbar-light-active-color;
 
     @include hover-focus {
@@ -119,15 +118,3 @@ a.skip-link {
 }
 
 .navbar h1 { font-weight: $font-weight-normal; }
-figure {
-  &.img-responsive {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-img.img-responsive {
-  width: 100%;
-}
