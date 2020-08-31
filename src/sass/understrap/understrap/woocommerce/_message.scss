@@ -1,0 +1,17 @@
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  &, &:before {
+    color: black;
+  }
+  border-top-color: black;
+  a.button {
+    border: 1px solid black;
+    background: black;
+    color: #fff;
+    transition: 0.3s all ease;
+    &:hover, &:focus {
+      box-shadow: none;
+      color: black;
+      background: transparent;
+    }
+  }
+}

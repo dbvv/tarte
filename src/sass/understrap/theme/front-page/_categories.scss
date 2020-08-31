@@ -1,0 +1,121 @@
+.home {
+  .categories-block {
+    max-width: 967px !important;
+    margin-top: 40px;
+    p {
+      margin: 0;
+    }
+    .on-sale {
+      background: url('../img/frontpage-sale.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      //margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      .onsale-content {
+        padding: 30px;
+        text-align: center;
+        color: #fff;
+        background: $black;
+        p {
+          color: #fff;
+          font-size: 40px;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        min-height: 520px;
+      }
+    }
+    .category {
+      background: $pink;
+      padding: 24px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-sstart;
+      justify-content: space-between;
+      min-height: 207px;
+      margin-right: 10px;
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
+      .category-content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 50%;
+        width: 50%;
+        @media screen and (max-width: 560px) {
+          flex: 0 100%;
+          width: 100%;
+        }
+      }
+      .btn {
+        max-width: 200px;
+      }
+      .category-title {
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.15em;
+      }
+      .category-short-title {
+        margin-bottom: 10px;
+      }
+      .category-price {
+        margin-bottom: 20px;
+        font-size: 23px;
+        font-weight: 400;
+      }
+      .category-image {
+        position: relative;
+        flex: 0 50%;
+        width: 50%;
+        @media screen and (max-width: 560px) {
+          //display: none; 
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+          right: 0px;
+          height: 200px;
+          width: auto;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        flex-direction: column-reverse;
+        margin-right: 0px;
+        .category-title {
+          font-weight: bold;
+          text-align: center;
+        }
+        .category-content {
+          align-items: center;
+          margin-top: 7px;
+        }
+        .category-short-title {
+          font-size: 18px;
+          text-align: center;
+        }
+        &:last-child {
+          margin-bottom: 30px;
+        }
+        .category-image {
+          flex: 0 90%;
+          width: 100%;
+          img {
+            max-width: 100%;
+            position: relative;
+            right: -10%;
+            margin-top: -50px;
+            height: 200px;
+          }  
+        }
+        
+      }
+    }
+  }
+}

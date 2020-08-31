@@ -1,0 +1,22 @@
+.woocommerce.single-product {
+  .product{
+    position: relative;
+    span.onsale {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: auto;
+      padding: 5px 10px;
+      border-radius: 0;
+      background: $gray-badge;
+      margin: 0px;
+      min-height: 32px;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+    [role="tablist"] {
+      display: none;
+    }
+
+  }
+}

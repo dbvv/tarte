@@ -1,0 +1,16 @@
+.widget {
+  &.widget_subscription_widget {
+    input {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    button {
+      width: 100%;
+      font-weight: lighter;
+    }
+    p.support_title {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}

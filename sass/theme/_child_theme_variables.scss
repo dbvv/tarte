@@ -1,0 +1,58 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color system
+//
+
+$gray-badge: rgb(85, 85, 85);
+$black: rgba(0, 0, 0, 0.7);
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('GothamPro-Light.eot');
+	src: local('Gotham Pro Light'), local('GothamPro-Light'),
+		url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('GothamPro-Light.woff') format('woff'),
+		url('GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('../fonts/GothamProNarrow-Medium.eot');
+	src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+		url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('../fonts/GothamProNarrow-Bold.eot');
+	src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+		url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Peaches and Cream';
+  src: url('../fonts/Peaches and Cream Regular.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+$font-family-base:'Gotham Pro Narrow';
+$headings-font-weight: bold;
+$input-font-family:  $font-family-base;
+$btn-font-family: $font-family-base;
+$font-family-peaches: 'Peaches and Cream', $font-family-base;

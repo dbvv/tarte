@@ -1,0 +1,33 @@
+.woocommerce {
+  .price {
+    span, ins, del {
+      color: black;
+      font-size: 19px !important;
+      font-weight: 400;
+    }
+    span, ins {
+      text-decoration: none;
+    }
+    del {
+      opacity: 0.5;
+    }
+  }
+  .quantity {
+    input.qty {
+      height: 46px;
+    }
+    & + button {
+      height: 44px;
+      background: black;
+      border: 1px solid black;
+      color: #fff;
+      transition: 0.4s all ease;
+      &:hover, &:focus {
+        outline: none;
+        box-shadow: none;
+        color: black;
+        background: #fff;
+      }
+    }
+  }
+}

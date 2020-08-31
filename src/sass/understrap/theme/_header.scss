@@ -1,0 +1,94 @@
+.navbar-light .navbar-toggler {
+  border: none;
+  &[aria-expanded="true"] {
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
+    outline: none;
+    padding: 10px;
+    span {
+        background-image: url(../img/cancel.png);
+        background-repeat: no-repeat;
+    }
+  }
+}
+
+.common-header {
+  .header-notice {
+    background: $pink;
+    color: black;
+    text-align: center;
+    padding: 18px;
+    font-size: 18px;
+  }
+  .navbar {
+    padding: 0 !important;
+    .nav-link {
+      padding: 0 1rem;
+      text-align: center;
+      @media screen and (max-width: 560px) {
+        padding: 10px;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      //background: $pink;
+    }
+  }
+  .navbar-brand {
+    img {
+      width: 195px;
+      height: auto;
+    }
+  }
+
+}
+
+.shopping-cart-fixed {
+  position: fixed;
+  top: 46px;
+  right: 100px;
+  z-index: 850;
+  svg {
+    width: 57px;
+  }
+  .shopping-cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 560px) {
+    font-size: 15px;
+    position: absolute;
+    top: 160px;
+    padding: 4px 10px;
+    right: 35px;
+    svg {
+      width: 30px;
+    }
+    .shopping-cart-count {
+      left: 30px;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 20px;
+      background: $pink;
+      font-size: 12px;
+      padding: 12px;
+      height: 13px;
+      border-radius: 15px;
+      color: $black;
+    }
+  }
+}
+.post-thumbnail {
+  margin-top: 15px;
+}

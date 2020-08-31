@@ -1,0 +1,12 @@
+{
+    "name": "dbvv/glossier",
+    "description": "Understrap child theme for glossier.ru.com",
+    "type": "library",
+    "license": "GPL-2.0",
+    "minimum-stability": "stable",
+    "require": {
+        "htmlburger/carbon-fields": "^3.1"
+    },
+    "keywords": ["wordpress","theme","bootstrap"],
+    "homepage": "https://github.com/holger1411/understrap-child"
+}
