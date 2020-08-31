@@ -14,3 +14,11 @@ figure.woocommerce-product-gallery__wrapper {
 		width: 110px !important;
 	}
 }
+@import "woocommerce/breadcrumbs";
+@import "woocommerce/cart";
+@import "woocommerce/checkout";
+@import "woocommerce/loop";
+@import "woocommerce/message";
+@import "woocommerce/price";
+@import "woocommerce/related";
+@import "woocommerce/single-product";

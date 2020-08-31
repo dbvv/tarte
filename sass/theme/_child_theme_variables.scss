@@ -16,7 +16,7 @@ $bg-overlay-color: rgb(83, 45, 107);
 
 // fonts
 @import "font_face";
-$font-family-base:'FuturaMediumC';
+$font-family-base:'forum', 'serif', Arial, Helvetica, sans-serif;
 $headings-font-weight: bold;
 $input-font-family:  $font-family-base;
 $btn-font-family: $font-family-base;

@@ -13,11 +13,12 @@
 
 .common-header {
   .header-notice {
-    background: $pink;
-    color: black;
+    background: $bg-overlay-color;
+    color: white;
     text-align: center;
-    padding: 18px;
+    padding: 8px;
     font-size: 18px;
+    font-family: $font-family-base;
   }
   .navbar {
     padding: 0 !important;
