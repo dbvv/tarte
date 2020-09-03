@@ -24587,11 +24587,19 @@ ul.products li.product a.added_to_cart {
   font-size: 18px;
   font-family: "forum", "serif", Arial, Helvetica, sans-serif; }
 
+.common-header .navbar-brand {
+  margin: 20px auto; }
+  .common-header .navbar-brand img {
+    max-width: 140px; }
+
 .common-header .navbar {
   padding: 0 !important; }
   .common-header .navbar .nav-link {
-    padding: 0 1rem;
-    text-align: center; }
+    padding: 0 10px;
+    text-align: center;
+    line-height: 33px;
+    color: #532d6b;
+    font-size: 14px; }
     @media screen and (max-width: 560px) {
       .common-header .navbar .nav-link {
         padding: 10px; } }

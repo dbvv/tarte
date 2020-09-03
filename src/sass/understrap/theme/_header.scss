@@ -20,11 +20,20 @@
     font-size: 18px;
     font-family: $font-family-base;
   }
+  .navbar-brand {
+    margin: 20px auto;
+    img {
+      max-width: 140px;
+    }
+  }
   .navbar {
     padding: 0 !important;
     .nav-link {
-      padding: 0 1rem;
+      padding: 0 10px;
       text-align: center;
+      line-height: 33px;
+      color: $bg-overlay-color;
+      font-size: 14px;
       @media screen and (max-width: 560px) {
         padding: 10px;
       }
