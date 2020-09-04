@@ -18,22 +18,35 @@
     text-align: center;
     padding: 8px;
     font-size: 18px;
-    font-family: $font-family-base;
+    font-family: 'forum';
   }
   .navbar-brand {
-    margin: 20px auto;
+    margin: 10px auto;
     img {
       max-width: 140px;
     }
   }
   .navbar {
     padding: 0 !important;
+    .navbar-nav {
+      @media screen and (min-width: 576px) {
+        justify-content: space-between;
+        min-width: 80%;
+      }
+    }
+    li.nav-item {
+      text-align: center;
+      &.menu-item-object-product_cat {
+        text-transform: uppercase;
+      }
+    }
     .nav-link {
       padding: 0 10px;
       text-align: center;
       line-height: 33px;
       color: $bg-overlay-color;
       font-size: 14px;
+      font-weight: 500;
       @media screen and (max-width: 560px) {
         padding: 10px;
       }
@@ -42,22 +55,19 @@
       //background: $pink;
     }
   }
-  .navbar-brand {
-    img {
-      width: 195px;
-      height: auto;
-    }
-  }
 
 }
 
 .shopping-cart-fixed {
   position: fixed;
-  top: 46px;
+  top: 66px;
   right: 100px;
   z-index: 850;
   svg {
     width: 57px;
+    path {
+      fill: $bg-overlay-color;
+    }
   }
   .shopping-cart-count {
     position: absolute;
