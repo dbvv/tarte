@@ -226,7 +226,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1959,7 +1959,7 @@ pre {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2793,7 +2793,7 @@ textarea.form-control,
 .btn,
 .wpcf7 input[type=submit] {
   display: inline-block;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #212529;
   text-align: center;
@@ -4525,7 +4525,7 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4606,7 +4606,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -6290,7 +6290,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6375,7 +6375,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9637,9 +9637,11 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-breadcrumb {
   font-weight: bold;
   color: black !important;
-  font-size: 17px !important; }
+  font-size: 15px !important;
+  line-height: 26px;
+  margin-bottom: 30px !important; }
   .woocommerce-breadcrumb, .woocommerce-breadcrumb * {
-    font-family: "forum", "serif", Helvetica; }
+    font-family: 'GothamBook'; }
   .woocommerce-breadcrumb a {
     font-weight: bold;
     color: black !important;
@@ -9953,6 +9955,14 @@ ul.products li.product a.added_to_cart {
     font-weight: normal; }
   .woocommerce.single-product .product [role="tablist"] {
     display: none; }
+  .woocommerce.single-product .product .product_title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px; }
+  .woocommerce.single-product .product .product_meta {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 30px; }
 
 /*
  *  Owl Carousel - Core
@@ -12611,7 +12621,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -14344,7 +14354,7 @@ pre {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -15178,7 +15188,7 @@ textarea.form-control,
 .btn,
 .wpcf7 input[type=submit] {
   display: inline-block;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #212529;
   text-align: center;
@@ -16910,7 +16920,7 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -16991,7 +17001,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -18669,7 +18679,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -18754,7 +18764,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Gotham", "serif", Arial, Helvetica, sans-serif;
+  font-family: "GothamBook", "serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -22014,9 +22024,11 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-breadcrumb {
   font-weight: bold;
   color: black !important;
-  font-size: 17px !important; }
+  font-size: 15px !important;
+  line-height: 26px;
+  margin-bottom: 30px !important; }
   .woocommerce-breadcrumb, .woocommerce-breadcrumb * {
-    font-family: "forum", "serif", Helvetica; }
+    font-family: 'GothamBook'; }
   .woocommerce-breadcrumb a {
     font-weight: bold;
     color: black !important;
@@ -22330,6 +22342,14 @@ ul.products li.product a.added_to_cart {
     font-weight: normal; }
   .woocommerce.single-product .product [role="tablist"] {
     display: none; }
+  .woocommerce.single-product .product .product_title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px; }
+  .woocommerce.single-product .product .product_meta {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 30px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -24724,7 +24744,8 @@ ul.products li.product a.added_to_cart {
     line-height: 33px;
     color: #532d6b;
     font-size: 14px;
-    font-weight: 500; }
+    font-weight: 500;
+    font-family: 'Gotham'; }
     @media screen and (max-width: 560px) {
       .common-header .navbar .nav-link {
         padding: 10px; } }

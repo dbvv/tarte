@@ -40,7 +40,4 @@ require get_stylesheet_directory() . '/inc/woocommerce/loop.php';
 require get_stylesheet_directory() . '/inc/woocommerce/cart.php';
 require get_stylesheet_directory() . '/inc/woocommerce/single.php';
 require get_stylesheet_directory() . '/inc/woocommerce/checkout.php';
-require get_stylesheet_directory() . '/inc/wp-cli.php';
-require get_stylesheet_directory() . '/inc/subscription.php';
-require get_stylesheet_directory() . '/inc/search.php';
 require get_stylesheet_directory() . '/inc/checkout.php';

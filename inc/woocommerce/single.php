@@ -1,6 +1,9 @@
 <?php
-add_filter('woocommerce_product_tabs', 'glossier_product_tabs');
-function glossier_product_tabs($tabs) {
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 7 );
+
+add_filter('woocommerce_product_tabs', 'tarte_product_tabs');
+function tarte_product_tabs($tabs) {
   unset($tabs['additional_information']);
   //dd($tabs);
   return $tabs;
@@ -8,8 +11,8 @@ function glossier_product_tabs($tabs) {
 
 // woocommerce_product_description_tab
 
-add_action('woocommerce_after_add_to_cart_form', 'glossier_product_accordeon', 20);
-function glossier_product_accordeon() {
+add_action('woocommerce_after_add_to_cart_form', 'tarte_product_accordeon', 20);
+function tarte_product_accordeon() {
   global $product;
   $options = [
     'hover' => __('Нанесение'),
@@ -41,9 +44,16 @@ function glossier_product_accordeon() {
   echo $html;
 }
 
-add_filter('woocommerce_dropdown_variation_attribute_options_args', 'glossier_dropdown_filter');
-function glossier_dropdown_filter($options)
+add_filter('woocommerce_dropdown_variation_attribute_options_args', 'tarte_dropdown_filter');
+function tarte_dropdown_filter($options)
 {
   $options['class'] = 'form-control';
   return $options;
+}
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' / ';
+	return $defaults;
 }
