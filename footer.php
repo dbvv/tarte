@@ -17,6 +17,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
+  <div class="footer-notice">
+    <?php echo carbon_get_theme_option('footer_notice'); ?>
+  </div>
+
+  <div class="footer-pattern">
+
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
@@ -38,6 +44,11 @@ $container = get_theme_mod( 'understrap_container_type' );
               </div>
               <div class="col-sm-4 about-info">
                 <?php echo carbon_get_theme_option('about_info'); ?>
+              </div>
+              <div class="col-sm-5">
+                <ul class="widgets footer-right">
+                    <?php dynamic_sidebar('footer-right'); ?>
+                </ul>
                 <div class="footer-socials">
                     <?php
                         $socials = ['facebook', 'pinterest', 'instagram', 'vk'];
@@ -48,39 +59,34 @@ $container = get_theme_mod( 'understrap_container_type' );
                         }
                     ?>  
                 </div>
-              </div>
-              <div class="col-sm-5">
-                <ul class="widgets footer-right">
-                    <?php dynamic_sidebar('footer-right'); ?>
-                </ul>
+                <?php 
+                    $privacy_id = carbon_get_theme_option('privacy_policy_page');
+                    $privacy = get_post($privacy_id);
+                    echo '<a class="privacy-link" href="' . get_permalink($privacy_id) . '">' . $privacy->post_title . '</a>'; 
+                ?>
+
               </div>
             </div>
 					</div><!-- .site-info -->
           
-          <div class="container mt-3">
+          <div class=" footer-text">
             <?php echo carbon_get_theme_option('footer_text'); ?>
           </div>
-    
-          <div class="container mt-5" >
-            <div class="row justify-content-between">
-              <div class="col-md-4"><?php echo carbon_get_theme_option('copyright_text'); ?></div>
-              <div class="col-md-4 text-right">
-                <?php 
-                    $privacy_id = carbon_get_theme_option('privacy_policy_page');
-                    $privacy = get_post($privacy_id);
-                    echo '<a href="' . get_permalink($privacy_id) . '">' . $privacy->post_title . '</a>'; 
-                ?>
-            </div>
-            </div>
-          </div>
-
-				</footer><!-- #colophon -->
+   				</footer><!-- #colophon -->
 
 			</div><!--col end -->
 
 		</div><!-- row end -->
 
 	</div><!-- container end -->
+  </div> <!-- footer-pattern end-->
+ 
+          <div class="container mt-2 footer-info" >
+            <div class="row justify-content-between">
+              <div class="col-md-12"><?php echo carbon_get_theme_option('copyright_text'); ?></div>
+            </div>
+          </div>
+
 
 </div><!-- wrapper end -->
 

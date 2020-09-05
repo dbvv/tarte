@@ -10,6 +10,7 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'header_notice', __('Notice in header') ),
         ))
         ->add_tab(__('Footer'), [
+          Field::make('rich_text', 'footer_notice', __('Footer notice')),
           Field::make('rich_text', 'footer_text', __('Footer text')),
           Field::make("text", 'copyright_text', __('Copyright text')),
           Field::make('select', 'privacy_policy_page', 'Privacy policy')->add_options('glossier_get_pages'),

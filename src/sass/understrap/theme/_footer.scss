@@ -1,16 +1,59 @@
 #index-wrapper {
   min-height: 100vh;
 }
+
+.footer-pattern {
+  background-color: #fff;
+  background-image: url('../img/ironpattern.png');
+  padding: 20px 0;
+  & *:not(.fa) {
+    font-family: 'GothamBook';
+  }
+}
+.footer-notice {
+  text-align: center;
+  width: 100%;
+  color: #fff !important;
+  font-family: 'GothamBook';
+  background: $bg-overlay-color;
+  padding: 13px;
+  a, b, i, span, p {
+    color: #fff;
+    font-size: 15px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  p {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
 footer.site-footer {
   ul.menu {
     list-style-type: none;
     color: black;
     padding-left: 0px;
-    border-right: 1px solid black;
-    a {
-      color: black;
-      font-size: 17px;
-      line-height: 2.3em;
+    li {
+      margin: 0;
+      a {
+        color: black;
+        font-size: 15px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: 'GothamBook';
+        &:hover {
+          text-decoration: none;
+          color: $blue;
+        }
+      }
+      &.current-menu-item {
+        a {
+          color: $blue;
+        }
+      }
     }
   }
   .about-info {
@@ -18,23 +61,41 @@ footer.site-footer {
       margin: 5px;
     }
   }
+  .privacy-link {
+    margin-top: 20px;
+    color: black;
+    display: block;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .footer-text {
+    font-size: 11px;
+    margin-top: 60px;
+  }
   .footer-socials {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     a {
-      width: 40px;
-      height: 40px;
+      width: 33px;
+      height: 33px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       align-content: center;
       color: #fff;
-      margin-left: 10px;
-      background: black;
+      margin-right: 10px;
+      background: $gray;
       border-radius: 50%;
-      font-size: 24px;
+      font-size: 18px;
+    }
+  }
+
+  .footer-info {
+    & *:not(.fa) {
+      font-family: 'GothamBook';
     }
   }
   
