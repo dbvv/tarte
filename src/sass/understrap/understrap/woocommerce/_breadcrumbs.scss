@@ -2,6 +2,9 @@
   font-weight: bold;
   color: black !important;
   font-size: 17px !important;
+  &, & * {
+    font-family: $font-family-secondary;
+  }
   a {
     font-weight: bold;
     color: black !important;

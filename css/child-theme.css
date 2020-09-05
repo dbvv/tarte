@@ -9638,6 +9638,8 @@ figure.woocommerce-product-gallery__wrapper {
   font-weight: bold;
   color: black !important;
   font-size: 17px !important; }
+  .woocommerce-breadcrumb, .woocommerce-breadcrumb * {
+    font-family: "forum", "serif", Helvetica; }
   .woocommerce-breadcrumb a {
     font-weight: bold;
     color: black !important;
@@ -22013,6 +22015,8 @@ figure.woocommerce-product-gallery__wrapper {
   font-weight: bold;
   color: black !important;
   font-size: 17px !important; }
+  .woocommerce-breadcrumb, .woocommerce-breadcrumb * {
+    font-family: "forum", "serif", Helvetica; }
   .woocommerce-breadcrumb a {
     font-weight: bold;
     color: black !important;
