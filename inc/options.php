@@ -27,8 +27,10 @@ function crb_attach_theme_options() {
     $term_meta = Container::make('term_meta', __('Product category properties'))
       ->where('term_taxonomy', 'product_cat')
       ->add_fields([
-        Field::make('rich_text', 'promo_text', __('Promo text')),
-        Field::make('image', 'product_cat_promo_image', 'Product category promo image'),
+        Field::make('text', 'archive_title', __('Archive title')),
+        Field::make('image', 'archive_pattern', __('Archve pattern')),
+        //Field::make('rich_text', 'promo_text', __('Promo text')),
+        //Field::make('image', 'product_cat_promo_image', 'Product category promo image'),
         Field::make('text', 'short_title', __('Short title')),
         Field::make('text', 'min_price', __('Min price')),
       ]);

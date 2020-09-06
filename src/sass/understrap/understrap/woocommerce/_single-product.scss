@@ -1,19 +1,6 @@
-.woocommerce.single-product {
+.woocommerce.single-product, .remodal {
   .product{
     position: relative;
-    span.onsale {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: auto;
-      padding: 5px 10px;
-      border-radius: 0;
-      background: $gray-badge;
-      margin: 0px;
-      min-height: 32px;
-      line-height: 1.5;
-      font-weight: normal;
-    }
     [role="tablist"] {
       display: none;
     }
@@ -26,6 +13,12 @@
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 30px;
+    }
+    .price {
+      &, & * {
+        color: black;
+        font-weight: 400;
+      }
     }
     [name="add-to-cart"] {
       color: #fff;
@@ -46,47 +39,51 @@
       margin-bottom: 0px;
     }
 
-    .accordion {
-      .card {
-        background: #fff;
+    
+  }
+}
+
+.product {
+  .accordion {
+    .card {
+      background: #fff;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0px;
+      .card-header {
         border: none;
-        border-bottom: 1px solid black;
-        border-radius: 0px;
-        .card-header {
-          border: none;
-          background: #fff;
-          padding: 12px 0;
-          h2 {
-            button {
-              position: relative;
-              font-size: 15px;
-              line-height: 18px;
-              font-weight: 400;
-              text-transform: uppercase;
-              color: #000;
-              padding: 6px 0;
-              outline: none !important;
-              box-shadow: none !important;
-              text-decoration: none;
+        background: #fff;
+        padding: 12px 0;
+        h2 {
+          button {
+            position: relative;
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #000;
+            padding: 6px 0;
+            outline: none !important;
+            box-shadow: none !important;
+            text-decoration: none;
+            &:after {
+              position: absolute;
+              top: 6px;
+              right: 0;
+              content: '+';
+              font-size: 24px;
+            }
+            &:not(.collapsed) {
               &:after {
-                position: absolute;
-                top: 6px;
-                right: 0;
-                content: '+';
-                font-size: 24px;
-              }
-              &:not(.collapsed) {
-                &:after {
-                  content: '-';
-                }
+                content: '-';
               }
             }
           }
         }
-        .card-body {
-          padding: 20px 0;
-          font-size: 15px;
-        }
+      }
+      .card-body {
+        padding: 20px 0;
+        font-size: 15px;
       }
     }
   }

@@ -1,18 +1,21 @@
 .woocommerce {
-  .price {
-    span, ins, del {
-      color: $gray-price;
-      font-size: 26px !important;
-      line-height: 32px;
-      font-weight: 400;
-    }
-    span, ins {
-      text-decoration: none;
-    }
-    del {
-      opacity: 0.5;
+  .single-product, .remodal {
+    .price {
+      span, ins, del {
+        color: $gray-price;
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 400;
+      }
+      span, ins {
+        text-decoration: none;
+      }
+      del {
+        opacity: 0.5;
+      }
     }
   }
+  
   .quantity {
     input.qty {
       height: 38px;
@@ -31,7 +34,18 @@
     .quantity {
       float: none !important;
     }
-
-    
+  }
+  li.product {
+    .price {
+      &, & * {
+        font-size: 15px;
+        line-height: 18px;
+        color: black;
+        font-weight: 400;
+      }
+      del {
+        opacity: 0.7;
+      }
+    }
   }
 }

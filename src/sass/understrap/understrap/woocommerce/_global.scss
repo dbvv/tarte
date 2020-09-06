@@ -1,0 +1,11 @@
+.woocommerce {
+  span.onsale {
+    background: $gallery-ribbon;
+    color: #fff;
+    left: 0;
+    padding: 5px 10px;
+    min-width: 20%;
+    max-width: 80%;
+    border-radius: 0;
+  }
+}

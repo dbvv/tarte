@@ -46,3 +46,16 @@ function my_custom_currency_symbol( $symbol, $currency ) {
   }
   return $symbol;
 }
+
+add_action('woocommerce_before_main_content', 'tarte_main_content', 5);
+function tarte_main_content() {
+  if (is_product_category()) {
+    $category = get_queried_object();
+    $archive_title = carbon_get_term_meta($category->term_id, 'archive_title');
+    $archive_pattern = carbon_get_term_meta($category->term_id, 'archive_pattern');
+    if ($archive_title) {
+      $html = '<div class="archive-muster-title">' . $archive_title . '</div>';
+      echo $html;
+    }
+  }
+}
