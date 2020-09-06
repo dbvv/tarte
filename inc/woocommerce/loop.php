@@ -39,7 +39,7 @@ function glossier_shop_loop_image_container_end() {
 }
 
 
-add_filter( 'woocommerce_currency_symbol', 'my_custom_currency_symbol', 90, 2 );
+//add_filter( 'woocommerce_currency_symbol', 'my_custom_currency_symbol', 90, 2 );
 function my_custom_currency_symbol( $symbol, $currency ) {
   if ($currency === 'RUB') {
     $symbol = 'руб.';

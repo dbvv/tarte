@@ -15,11 +15,14 @@ add_action('woocommerce_after_add_to_cart_form', 'tarte_product_accordeon', 20);
 function tarte_product_accordeon() {
   global $product;
   $options = [
-    'hover' => __('Нанесение'),
-    'volume' => __('Объем'),
-    'consist' => __('Состав'),
-    'features' => __('Особенности'),
-    'clinic' => __('Клинические испытания'),
+    'info' => __('Product info'),
+    'return_refund_policy' => __('RETURN & REFUND POLICY'),
+    'shipping_info' => __('Shipping info'),
+    //'hover' => __('Нанесение'),
+    //'volume' => __('Объем'),
+    //'consist' => __('Состав'),
+    //'features' => __('Особенности'),
+    //'clinic' => __('Клинические испытания'),
   ];
   $html = '<div class="accordion" id="accordionExample">';
 

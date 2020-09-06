@@ -127,6 +127,7 @@ gulp.task( 'scripts', function() {
 
         // End - All BS4 stuff
         'node_modules/owl.carousel/dist/owl.carousel.js',
+        'node_modules/stepper.js/dest/stepper.min.js',
 
         `${paths.dev}/js/skip-link-focus-fix.js`,
 

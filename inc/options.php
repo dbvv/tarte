@@ -39,12 +39,15 @@ function crb_attach_theme_options() {
           Field::make('image', 'product_hover_image', __('Product hover image')),
         ])
         ->add_tab(__('Tabs'), [
+          Field::make('rich_text', 'product_info', __('Product info')),
+          Field::make('rich_text', 'product_refund_return_policy', __('Return and refund policy')),
+          Field::make('rich_text', 'product_shipping_info', __('Shipping info')),
 
-          Field::make('rich_text', 'product_hover', __('Нанесение')),
-          Field::make('rich_text', 'product_volume', __("Объем")),
-          Field::make('rich_text', 'product_consist', __('Состав')),
-          Field::make('rich_text', 'product_features', __('Особенности')),
-          Field::make('rich_text', 'product_clinic', __('Клинические испытания')),
+          //Field::make('rich_text', 'product_hover', __('Нанесение')),
+          //Field::make('rich_text', 'product_volume', __("Объем")),
+          //Field::make('rich_text', 'product_consist', __('Состав')),
+          //Field::make('rich_text', 'product_features', __('Особенности')),
+          //Field::make('rich_text', 'product_clinic', __('Клинические испытания')),
         ]);
     $front_page = Container::make('theme_options', __('Front page'))
       ->set_page_parent($container)

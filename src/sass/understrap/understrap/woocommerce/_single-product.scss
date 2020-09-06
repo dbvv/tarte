@@ -27,6 +27,53 @@
       line-height: 17px;
       margin-bottom: 30px;
     }
+    [name="add-to-cart"] {
+      color: #fff;
+      background-color: $bg-overlay-color;
+      min-height: 43px;
+      font-size: 18px;
+      line-height: 18px;
+      max-width: 320px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+      &:hover, &:focus {
+        background-color: $bg-overlay-color-opacity;
+        color: rgba(#fff, 0.7);
+      }
+    }
+    form.cart {
+      margin-bottom: 0px;
+    }
 
+    .accordion {
+      .card {
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0px;
+        .card-header {
+          border: none;
+          background: #fff;
+          padding: 12px 0;
+          h2 {
+            button {
+              font-size: 15px;
+              line-height: 18px;
+              font-weight: 400;
+              text-transform: uppercase;
+              color: #000;
+              padding: 6px 0;
+              outline: none !important;
+              box-shadow: none !important;
+            }
+          }
+        }
+        .card-body {
+          padding: 20px 0;
+          font-size: 15px;
+        }
+      }
+    }
   }
 }

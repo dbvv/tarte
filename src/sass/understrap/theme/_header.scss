@@ -111,3 +111,10 @@
 .post-thumbnail {
   margin-top: 15px;
 }
+
+#content {
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
