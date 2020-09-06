@@ -9989,6 +9989,7 @@ ul.products li.product a.added_to_cart {
       background: #fff;
       padding: 12px 0; }
       .woocommerce.single-product .product .accordion .card .card-header h2 button {
+        position: relative;
         font-size: 15px;
         line-height: 18px;
         font-weight: 400;
@@ -9997,7 +9998,16 @@ ul.products li.product a.added_to_cart {
         padding: 6px 0;
         outline: none !important;
         -webkit-box-shadow: none !important;
-                box-shadow: none !important; }
+                box-shadow: none !important;
+        text-decoration: none; }
+        .woocommerce.single-product .product .accordion .card .card-header h2 button:after {
+          position: absolute;
+          top: 6px;
+          right: 0;
+          content: '+';
+          font-size: 24px; }
+        .woocommerce.single-product .product .accordion .card .card-header h2 button:not(.collapsed):after {
+          content: '-'; }
     .woocommerce.single-product .product .accordion .card .card-body {
       padding: 20px 0;
       font-size: 15px; }
@@ -22414,6 +22424,7 @@ ul.products li.product a.added_to_cart {
       background: #fff;
       padding: 12px 0; }
       .woocommerce.single-product .product .accordion .card .card-header h2 button {
+        position: relative;
         font-size: 15px;
         line-height: 18px;
         font-weight: 400;
@@ -22422,7 +22433,16 @@ ul.products li.product a.added_to_cart {
         padding: 6px 0;
         outline: none !important;
         -webkit-box-shadow: none !important;
-                box-shadow: none !important; }
+                box-shadow: none !important;
+        text-decoration: none; }
+        .woocommerce.single-product .product .accordion .card .card-header h2 button:after {
+          position: absolute;
+          top: 6px;
+          right: 0;
+          content: '+';
+          font-size: 24px; }
+        .woocommerce.single-product .product .accordion .card .card-header h2 button:not(.collapsed):after {
+          content: '-'; }
     .woocommerce.single-product .product .accordion .card .card-body {
       padding: 20px 0;
       font-size: 15px; }

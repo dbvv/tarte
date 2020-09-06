@@ -58,6 +58,7 @@
           padding: 12px 0;
           h2 {
             button {
+              position: relative;
               font-size: 15px;
               line-height: 18px;
               font-weight: 400;
@@ -66,6 +67,19 @@
               padding: 6px 0;
               outline: none !important;
               box-shadow: none !important;
+              text-decoration: none;
+              &:after {
+                position: absolute;
+                top: 6px;
+                right: 0;
+                content: '+';
+                font-size: 24px;
+              }
+              &:not(.collapsed) {
+                &:after {
+                  content: '-';
+                }
+              }
             }
           }
         }
