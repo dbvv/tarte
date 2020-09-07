@@ -183,7 +183,7 @@
   --blue: #3d9be9;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #FFD1DE;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -589,7 +589,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #FFD1DE;
   word-wrap: break-word; }
   a > code {
     color: inherit; }
@@ -12725,7 +12725,7 @@ li.product:hover .quick_view {
   --blue: #3d9be9;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #FFD1DE;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -13131,7 +13131,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #FFD1DE;
   word-wrap: break-word; }
   a > code {
     color: inherit; }
@@ -25090,7 +25090,7 @@ li.product:hover .quick_view {
         top: 15px;
         right: 0;
         width: 20px;
-        background: #e83e8c;
+        background: #FFD1DE;
         font-size: 12px;
         padding: 12px;
         height: 13px;
@@ -25554,6 +25554,65 @@ li.menu-item.menu-item-object-product_cat {
   .single-product .accordion > .card > .card-header {
     border-radius: 0;
     margin-bottom: -1px; }
+
+.home .jumbotron {
+  padding: 0;
+  min-height: 300px;
+  background-color: #FFD1DE; }
+  .home .jumbotron p {
+    margin-bottom: 0px; }
+  .home .jumbotron-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .home .jumbotron_title {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Gotham';
+    color: #532d6b;
+    text-align: center; }
+  .home .jumbotron_brand {
+    font-weight: 400;
+    font-family: 'Gotham';
+    color: #FF43C4;
+    font-size: 62px;
+    line-height: 70px; }
+  .home .jumbotron_link {
+    background-color: #532d6b;
+    color: #fff;
+    font-size: 25px;
+    min-width: 270px;
+    min-height: 59px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .home .jumbotron_link:hover {
+      background-color: #6b2b94; }
 
 /*
 * Use existing Bootstrap 4 classes and

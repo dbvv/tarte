@@ -54,11 +54,12 @@ function crb_attach_theme_options() {
     $front_page = Container::make('theme_options', __('Front page'))
       ->set_page_parent($container)
       ->add_fields([
-        Field::make('text', 'front_page_first_screen_link', __('Front page first screen link')),
-        Field::make('text', 'front_page_first_screen_header', __('First screen header'))->set_default_value('Встречайте Бестселлер!'),
-        Field::make('text', 'front_page_first_screen_text', __('First screen text'))->set_default_value('Поколение G - это новый вид помады, которая создаёт эффект натуральных матовых губ без пятен.'),
-        Field::make('image', 'front_page_first_screen_mobile_image', __('First screen mobile image'))
-        ->set_value_type('url'),
+        // first screen options
+        Field::make('text', 'front_page_jumbotron_title', __('Jumbotron title')),
+        Field::make('text', 'front_page_jumbotron_brand', __('Jumbotron brand')),
+        Field::make('text', 'front_page_jumbotron_link', __('Jumbotron link')),
+        Field::make('image', 'front_page_image', __('Front page image')),
+
         Field::make('complex', 'front_page_categories', __('front page categories'))
         ->add_fields([
           Field::make('select', 'category', __('Category'))
