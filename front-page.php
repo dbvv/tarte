@@ -28,6 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <?php
           $blocks = [
             'jumbotron',
+            'categories',
           ];
           foreach ($blocks as $block) {
             echo get_template_part('template-parts/frontpage', $block);

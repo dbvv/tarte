@@ -25614,6 +25614,51 @@ li.menu-item.menu-item-object-product_cat {
     .home .jumbotron_link:hover {
       background-color: #6b2b94; }
 
+.home .categories-block {
+  margin-top: 30px; }
+  .home .categories-block .category {
+    background: #e8e8e8;
+    padding: 10px; }
+    .home .categories-block .category, .home .categories-block .category * {
+      font-family: "forum", "serif", Helvetica; }
+    .home .categories-block .category-content {
+      width: 50%; }
+    .home .categories-block .category-title {
+      font-size: 45px; }
+    .home .categories-block .category-short-title {
+      font-size: 20px; }
+    .home .categories-block .category-price {
+      font-size: 27px; }
+    .home .categories-block .category a.btn {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      border: none;
+      border-radius: 0px;
+      width: 198px;
+      height: 50px;
+      background-color: black;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-transition: 0.4s all ease;
+      transition: 0.4s all ease;
+      font-weight: 700;
+      font-size: 19px; }
+      .home .categories-block .category a.btn:hover {
+        background-color: #532d6b; }
+    .home .categories-block .category-image {
+      max-width: 270px;
+      right: 0;
+      position: absolute;
+      top: -20px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

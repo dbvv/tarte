@@ -13,7 +13,7 @@ function crb_attach_theme_options() {
           Field::make('rich_text', 'footer_notice', __('Footer notice')),
           Field::make('rich_text', 'footer_text', __('Footer text')),
           Field::make("text", 'copyright_text', __('Copyright text')),
-          Field::make('select', 'privacy_policy_page', 'Privacy policy')->add_options('glossier_get_pages'),
+          Field::make('select', 'privacy_policy_page', 'Privacy policy')->add_options('tarte_get_pages'),
           Field::make('rich_text', 'about_info', __('About info')),
         ])
         ->add_tab(__('Socials'), [
@@ -63,11 +63,9 @@ function crb_attach_theme_options() {
         Field::make('complex', 'front_page_categories', __('front page categories'))
         ->add_fields([
           Field::make('select', 'category', __('Category'))
-            ->set_options('glossier_product_cat_select'),
+            ->set_options('tarte_product_cat_select'),
             ]),
-        Field::make('select', 'sale_page_link', __('Sales page'))
-            ->set_options('glossier_pages_select'),
-        Field::make('select', 'image_product_link', __('Image product link'))->set_options('glossier_product_select'),
+        Field::make('select', 'image_product_link', __('Image product link'))->set_options('tarte_product_select'),
         Field::make("rich_text", 'image_product_content', __('Image product content')),
         Field::make('image', 'image_product_left', __('Product image left'))->set_value_type('url'),
         Field::make('image', 'image_product_right', __('Product image right'))->set_value_type('url'),
@@ -80,7 +78,7 @@ function crb_load() {
     \Carbon_Fields\Carbon_Fields::boot();
 }
 
-function glossier_get_pages() {
+function tarte_get_pages() {
   $pages = [];
   $query = get_pages();
   foreach ($query as $q) {
@@ -89,17 +87,18 @@ function glossier_get_pages() {
   return $pages;
 }
 
-add_filter('mime_types', 'glossier_allowed_mime_types');
-function glossier_allowed_mime_types($mimes) {
+add_filter('mime_types', 'tarte_allowed_mime_types');
+function tarte_allowed_mime_types($mimes) {
   $mimes['webp'] = 'image/webp';
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
 
-function glossier_product_cat_select() {
+function tarte_product_cat_select() {
   $arr = [];
   $query = get_categories([
     'taxonomy' => 'product_cat',
+    'hide_empty' => false,
   ]);
   foreach ($query as $cat) {
     $arr[$cat->term_id] = $cat->name;
@@ -107,7 +106,7 @@ function glossier_product_cat_select() {
   return $arr;
 }
 
-function glossier_pages_select() {
+function tarte_pages_select() {
   $arr = [];
   $pages = get_pages();
   foreach ($pages as $page) {
@@ -116,7 +115,7 @@ function glossier_pages_select() {
   return $arr;
 }
 
-function glossier_product_select() {
+function tarte_product_select() {
   $arr = [];
   $products = get_posts(['post_type' => 'product', 'posts_per_page' => -1]);
   foreach ($products as $product) {
@@ -125,8 +124,8 @@ function glossier_product_select() {
   return $arr;
 }
 
-add_filter('term_link', 'glossier_term_link', 90, 3);
-function glossier_term_link($termlink, $term, $taxonomy) {
+add_filter('term_link', 'tarte_term_link', 90, 3);
+function tarte_term_link($termlink, $term, $taxonomy) {
   return str_replace('./', '', $termlink);
 }
 add_filter('request', function( $vars ) {

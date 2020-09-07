@@ -43,5 +43,51 @@
         background-color: $bg-overlay-cover-color;
       }
     }
+  } // end .jumbotron
+  .categories-block {
+    margin-top: 30px;
+    .category {
+      background: $category-background;
+      padding: 10px;
+      &, & * {
+        font-family: $font-family-secondary;
+      }
+      &-content {
+        width: 50%;
+      }
+      &-title {
+        font-size: 45px;
+      }
+      &-short-title {
+        font-size: 20px;
+      }
+      &-price {
+        font-size: 27px;
+      }
+      a.btn {
+        box-shadow: none;
+        outline: none;
+        border: none;
+        border-radius: 0px;
+        width: 198px;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s all ease;
+        font-weight: 700;
+        font-size: 19px;
+        &:hover {
+          background-color: $bg-overlay-color;
+        }
+      }
+      &-image {
+        max-width: 270px;
+        right: 0;
+        position: absolute;
+        top: -20px;
+      }
+    }
   }
 }
