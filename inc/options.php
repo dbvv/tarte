@@ -59,11 +59,21 @@ function crb_attach_theme_options() {
         Field::make('text', 'front_page_jumbotron_link', __('Jumbotron link')),
         Field::make('image', 'front_page_image', __('Front page image')),
 
+        // categories
         Field::make('complex', 'front_page_categories', __('front page categories'))
         ->add_fields([
           Field::make('select', 'category', __('Category'))
-            ->set_options('tarte_product_cat_select'),
-            ]),
+          ->set_options('tarte_product_cat_select'),
+          ]),
+
+        // new admissions
+        Field::make('text', 'front_page_admissions_title', __('Admissions title')),
+        Field::make('text', 'front_page_admissions_title_link', __('Admissions title link')),
+        Field::make('complex', 'front_page_admissions', __('Products admissions'))
+        ->add_fields([
+          Field::make('select', 'product', __('Product'))->set_options('tarte_product_select'),
+        ]),
+
         Field::make('select', 'image_product_link', __('Image product link'))->set_options('tarte_product_select'),
         Field::make("rich_text", 'image_product_content', __('Image product content')),
         Field::make('image', 'image_product_left', __('Product image left'))->set_value_type('url'),
