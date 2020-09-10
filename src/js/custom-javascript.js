@@ -1,50 +1,6 @@
 // Add your custom JS here.
 (function ($) {
-  $('body').on('added_to_cart', function (event, hash, e, a) {
-    setTimeout(function () {
-        $(a).removeClass('added');
-    }, 3000)
-  });
-
-  $('.search a').on('click', function (e) {
-    e.preventDefault();
-    console.log('Search clicked');
-    $('.search-area').toggleClass('open');
-    document.getElementById("search-input").focus();
-  });
-
-  window.toggleSearch = function () {
-    $('.search-area').toggleClass('open');
-  }
-
-  var $searchInput = $('#search-input');
-  var searchInputIntervalTimer;
-  $searchInput.on('keyup', function () {
-    clearTimeout(searchInputIntervalTimer);
-    var value = $searchInput.val();
-    searchInputIntervalTimer = setTimeout(function() {
-        search(value);
-    }, 1000);
-  });
-  $searchInput.on('keydown', function () {
-    clearTimeout(searchInputIntervalTimer);
-  })
-  function search(value) {
-    console.log('value', value);
-    $.ajax({
-      url: '/wp-admin/admin-ajax.php',
-      method: 'POST',
-      data: {
-        action: 'glossier_search',
-        search: value,
-      },
-      success: function (response) {
-        $('.search-results').html(response);
-      },
-    })
-  }
-
-  $('.frontpage-bestsellers ul.products').addClass('owl-carousel').owlCarousel({
+  $('.frontpage-carousel-products ul.products').addClass('owl-carousel').owlCarousel({
     items: 4,
     nav: true,
     dots: false,

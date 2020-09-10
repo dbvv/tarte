@@ -15,9 +15,12 @@
  * @package 	WooCommerce/Templates
  * @version     3.6.1
  */
-return;
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
+}
+
+if (!is_front_page()) {
+  return;
 }
 
 global $product;

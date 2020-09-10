@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper front-page" id="page-wrapper">
+<div class="wrapper front-page woocommerce" id="page-wrapper">
 
 	<div class="" id="content" tabindex="-1">
 

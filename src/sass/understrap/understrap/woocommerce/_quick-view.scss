@@ -23,7 +23,9 @@
 li.product {
   .quick_view {
     position: absolute;
-    bottom: 20%;
+    top: 300px;
+    transform-origin: top;
+    transform: rotateX(180deg);
     width: 100%;
     text-align: center;
     background: #fff;
@@ -43,6 +45,7 @@ li.product {
       font-family: 'FuturaLightC';
       font-weight: 400;
       font-size: 14px;
+      transform: rotateX(-180deg);
     }
     &:hover {
       color: black;
@@ -58,6 +61,15 @@ li.product {
   &:hover {
     .quick_view {
       height: 50px;
+    }
+  }
+}
+
+.frontpage-carousel-products {
+  li.product {
+    
+    .quick_view {
+      top: 238px; // 218px (base img height) + 20px (margin)
     }
   }
 }

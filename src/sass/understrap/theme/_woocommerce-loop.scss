@@ -1,7 +1,6 @@
 ul.products {
   li.product {
     &[data-hover-image] {
-      
       &:hover {
         img.attachment-woocommerce_thumbnail {
           position: relative;
@@ -27,9 +26,6 @@ ul.products {
     .woocommerce-loop-product__title {
       text-align: center;
       color: #000;
-      font-size: 19px !important;
-      font-weight: bold;
-      padding: 0 !important;
       & + hr {
         width: 21px;
         margin: 8px auto;
@@ -54,18 +50,6 @@ ul.products {
         min-height: 32px;
         line-height: 1.5;
         font-weight: normal;
-      }
-    }
-    .add-to-cart-container {
-      a.add_to_cart_button {
-        background: black;
-        color: #fff;
-        &:hover {
-          color: rgba(255, 255, 255, 0.7);
-        }
-        &:focus {
-          box-shadow: none;
-        }
       }
     }
   }

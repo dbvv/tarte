@@ -1,14 +1,37 @@
-.frontpage-bestsellers {
-  margin: 50px 20px;
+.frontpage-carousel-products {
+  margin: 50px auto;
   h3 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
   }
+  &__title {
+    display: block;
+    font-family: $font-family-secondary;
+    font-size: 62px;
+    line-height: 87px;
+    color: black;
+    text-align: center;
+    &:hover {
+      color: $human;
+      text-decoration: none;
+
+    }
+  }
   li.product {
     width: 100% !important;
     margin: 0 auto;
     padding: 10px !important;
+    img {
+      max-height: 218px;
+      max-width: 218px;
+      margin: 20px auto !important;
+      text-align: center;
+    }
+    span.price {
+      line-height: 2rem;
+
+    }
   }
   button.owl-prev, button.owl-next {
     position: absolute;
@@ -22,9 +45,9 @@
     }
   }
   button.owl-next {
-    right: -10px;
+    right: -40px;
   }
   button.owl-prev {
-    left: -10px;
+    left: -40px;
   }
 }
