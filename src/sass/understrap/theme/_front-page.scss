@@ -49,6 +49,7 @@
     .category {
       background: $category-background;
       padding: 10px;
+      margin-bottom: 20px;
       &, & * {
         font-family: $font-family-secondary;
       }
