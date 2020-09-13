@@ -21,7 +21,7 @@
         font-weight: 400;
       }
     }
-    [name="add-to-cart"] {
+    [name="add-to-cart"], button.single_add_to_cart_button {
       color: #fff;
       background-color: $bg-overlay-color;
       min-height: 43px;

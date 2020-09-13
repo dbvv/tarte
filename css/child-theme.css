@@ -9996,7 +9996,7 @@ figure.woocommerce-product-gallery__wrapper {
   .woocommerce.single-product .product .price, .woocommerce.single-product .product .price *, .woocommerce .remodal .product .price, .woocommerce .remodal .product .price * {
     color: black;
     font-weight: 400; }
-  .woocommerce.single-product .product [name="add-to-cart"], .woocommerce .remodal .product [name="add-to-cart"] {
+  .woocommerce.single-product .product [name="add-to-cart"], .woocommerce.single-product .product button.single_add_to_cart_button, .woocommerce .remodal .product [name="add-to-cart"], .woocommerce .remodal .product button.single_add_to_cart_button {
     color: #fff;
     background-color: #532d6b;
     min-height: 43px;
@@ -10007,7 +10007,7 @@ figure.woocommerce-product-gallery__wrapper {
     border-radius: 20px;
     -webkit-transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
     transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out; }
-    .woocommerce.single-product .product [name="add-to-cart"]:hover, .woocommerce.single-product .product [name="add-to-cart"]:focus, .woocommerce .remodal .product [name="add-to-cart"]:hover, .woocommerce .remodal .product [name="add-to-cart"]:focus {
+    .woocommerce.single-product .product [name="add-to-cart"]:hover, .woocommerce.single-product .product [name="add-to-cart"]:focus, .woocommerce.single-product .product button.single_add_to_cart_button:hover, .woocommerce.single-product .product button.single_add_to_cart_button:focus, .woocommerce .remodal .product [name="add-to-cart"]:hover, .woocommerce .remodal .product [name="add-to-cart"]:focus, .woocommerce .remodal .product button.single_add_to_cart_button:hover, .woocommerce .remodal .product button.single_add_to_cart_button:focus {
       background-color: rgba(83, 45, 107, 0.7);
       color: rgba(255, 255, 255, 0.7); }
   .woocommerce.single-product .product form.cart, .woocommerce .remodal .product form.cart {
@@ -22590,7 +22590,7 @@ figure.woocommerce-product-gallery__wrapper {
   .woocommerce.single-product .product .price, .woocommerce.single-product .product .price *, .woocommerce .remodal .product .price, .woocommerce .remodal .product .price * {
     color: black;
     font-weight: 400; }
-  .woocommerce.single-product .product [name="add-to-cart"], .woocommerce .remodal .product [name="add-to-cart"] {
+  .woocommerce.single-product .product [name="add-to-cart"], .woocommerce.single-product .product button.single_add_to_cart_button, .woocommerce .remodal .product [name="add-to-cart"], .woocommerce .remodal .product button.single_add_to_cart_button {
     color: #fff;
     background-color: #532d6b;
     min-height: 43px;
@@ -22601,7 +22601,7 @@ figure.woocommerce-product-gallery__wrapper {
     border-radius: 20px;
     -webkit-transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
     transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out; }
-    .woocommerce.single-product .product [name="add-to-cart"]:hover, .woocommerce.single-product .product [name="add-to-cart"]:focus, .woocommerce .remodal .product [name="add-to-cart"]:hover, .woocommerce .remodal .product [name="add-to-cart"]:focus {
+    .woocommerce.single-product .product [name="add-to-cart"]:hover, .woocommerce.single-product .product [name="add-to-cart"]:focus, .woocommerce.single-product .product button.single_add_to_cart_button:hover, .woocommerce.single-product .product button.single_add_to_cart_button:focus, .woocommerce .remodal .product [name="add-to-cart"]:hover, .woocommerce .remodal .product [name="add-to-cart"]:focus, .woocommerce .remodal .product button.single_add_to_cart_button:hover, .woocommerce .remodal .product button.single_add_to_cart_button:focus {
       background-color: rgba(83, 45, 107, 0.7);
       color: rgba(255, 255, 255, 0.7); }
   .woocommerce.single-product .product form.cart, .woocommerce .remodal .product form.cart {
