@@ -10097,7 +10097,7 @@ figure.woocommerce-product-gallery__wrapper {
   border-radius: 0; }
 
 .woocommerce .quantity p {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   font-size: 13px;
   line-height: 16px; }
 
@@ -10105,6 +10105,8 @@ figure.woocommerce-product-gallery__wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none; }
+  .remodal #wcqv_contend .scrollbar {
+    width: 2px !important; }
   .remodal #wcqv_contend .onsale {
     margin: 0px; }
   .remodal #wcqv_contend .price, .remodal #wcqv_contend .price * {
@@ -10116,9 +10118,9 @@ figure.woocommerce-product-gallery__wrapper {
 .wcqv_prev, .wcqv_next {
   display: none !important; }
 
-li.product .quick_view {
+ul.products.columns-4 li.product .quick_view {
   position: absolute;
-  top: 300px;
+  top: 230px;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: rotateX(180deg);
@@ -10149,25 +10151,25 @@ li.product .quick_view {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 0px; }
-  li.product .quick_view span {
+  ul.products.columns-4 li.product .quick_view span {
     font-family: 'FuturaLightC';
     font-weight: 400;
     font-size: 14px;
     -webkit-transform: rotateX(-180deg);
             transform: rotateX(-180deg); }
-  li.product .quick_view:hover {
+  ul.products.columns-4 li.product .quick_view:hover {
     color: black;
     background: #fff; }
-  li.product .quick_view:after {
+  ul.products.columns-4 li.product .quick_view:after {
     content: " ";
     display: block;
     clear: both; }
 
-li.product:hover .quick_view {
+ul.products.columns-4 li.product:hover .quick_view {
   height: 50px; }
 
-.frontpage-carousel-products li.product .quick_view {
-  top: 238px; }
+.frontpage-carousel-products ul.products.columns-4 li.product .quick_view {
+  top: 235px; }
 
 /*
  *  Owl Carousel - Core
@@ -22689,7 +22691,7 @@ figure.woocommerce-product-gallery__wrapper {
   border-radius: 0; }
 
 .woocommerce .quantity p {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   font-size: 13px;
   line-height: 16px; }
 
@@ -22697,6 +22699,8 @@ figure.woocommerce-product-gallery__wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none; }
+  .remodal #wcqv_contend .scrollbar {
+    width: 2px !important; }
   .remodal #wcqv_contend .onsale {
     margin: 0px; }
   .remodal #wcqv_contend .price, .remodal #wcqv_contend .price * {
@@ -22708,9 +22712,9 @@ figure.woocommerce-product-gallery__wrapper {
 .wcqv_prev, .wcqv_next {
   display: none !important; }
 
-li.product .quick_view {
+ul.products.columns-4 li.product .quick_view {
   position: absolute;
-  top: 300px;
+  top: 230px;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: rotateX(180deg);
@@ -22741,25 +22745,25 @@ li.product .quick_view {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 0px; }
-  li.product .quick_view span {
+  ul.products.columns-4 li.product .quick_view span {
     font-family: 'FuturaLightC';
     font-weight: 400;
     font-size: 14px;
     -webkit-transform: rotateX(-180deg);
             transform: rotateX(-180deg); }
-  li.product .quick_view:hover {
+  ul.products.columns-4 li.product .quick_view:hover {
     color: black;
     background: #fff; }
-  li.product .quick_view:after {
+  ul.products.columns-4 li.product .quick_view:after {
     content: " ";
     display: block;
     clear: both; }
 
-li.product:hover .quick_view {
+ul.products.columns-4 li.product:hover .quick_view {
   height: 50px; }
 
-.frontpage-carousel-products li.product .quick_view {
-  top: 238px; }
+.frontpage-carousel-products ul.products.columns-4 li.product .quick_view {
+  top: 235px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
