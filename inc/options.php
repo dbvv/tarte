@@ -12,15 +12,17 @@ function crb_attach_theme_options() {
         ->add_tab(__('Footer'), [
           Field::make('rich_text', 'footer_notice', __('Footer notice')),
           Field::make('rich_text', 'footer_text', __('Footer text')),
-          Field::make("text", 'copyright_text', __('Copyright text')),
+          Field::make("rich_text", 'copyright_text', __('Copyright text')),
           Field::make('select', 'privacy_policy_page', 'Privacy policy')->add_options('tarte_get_pages'),
           Field::make('rich_text', 'about_info', __('About info')),
         ])
         ->add_tab(__('Socials'), [
           Field::make('text', 'social_facebook', __('Facebook')),
+          Field::make('text', 'social_twitter', __('Twitter')),
           Field::make('text', 'social_pinterest', __('Pinterest')),
           Field::make('text', 'social_instagram', __('Instagram')),
           Field::make('text', 'social_vk', __('Vk')),
+          Field::make('text', 'social_youtube', __('Youtube')),
         ])
         ;
 

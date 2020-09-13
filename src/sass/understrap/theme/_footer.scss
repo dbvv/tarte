@@ -94,11 +94,20 @@ footer.site-footer {
   }
 
   .footer-info {
+    text-align: center;
     & *:not(.fa) {
       font-family: 'GothamBook';
     }
+    
   }
   
+}
+
+.footer-info-content {
+  p {
+    font-size: 14px !important;
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer-menu {

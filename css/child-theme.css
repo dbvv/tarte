@@ -25367,8 +25367,14 @@ footer.site-footer .footer-socials {
     border-radius: 50%;
     font-size: 18px; }
 
-footer.site-footer .footer-info *:not(.fa) {
-  font-family: 'GothamBook'; }
+footer.site-footer .footer-info {
+  text-align: center; }
+  footer.site-footer .footer-info *:not(.fa) {
+    font-family: 'GothamBook'; }
+
+.footer-info-content p {
+  font-size: 14px !important;
+  margin-bottom: 0px; }
 
 @media screen and (max-width: 576px) {
   .footer-menu {

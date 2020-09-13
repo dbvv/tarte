@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </ul>
                 <div class="footer-socials">
                     <?php
-                        $socials = ['facebook', 'pinterest', 'instagram', 'vk'];
+                        $socials = ['facebook', "twitter",  'pinterest', 'instagram', 'vk', 'youtube'];
                         foreach ($socials as $social) {
                           if ($link = carbon_get_theme_option('social_' . $social)) {
                                 echo '<a href="' . $link . '"><i class="fa fa-' . $social . '"></i></a>';
@@ -83,7 +83,7 @@ $container = get_theme_mod( 'understrap_container_type' );
  
           <div class="container mt-2 footer-info" >
             <div class="row justify-content-between">
-              <div class="col-md-12"><?php echo carbon_get_theme_option('copyright_text'); ?></div>
+              <div class="col-md-12 text-center footer-info-content"><?php echo carbon_get_theme_option('copyright_text'); ?></div>
             </div>
           </div>
 
