@@ -23,4 +23,9 @@ figure.woocommerce-product-gallery__wrapper {
 @import "woocommerce/related";
 @import "woocommerce/single-product";
 @import "woocommerce/global";
+@import "woocommerce/variations";
+
+// plugins
+@import "woocommerce/variation-switches";
 @import "woocommerce/quick-view";
+

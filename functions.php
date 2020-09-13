@@ -42,3 +42,4 @@ require get_stylesheet_directory() . '/inc/woocommerce/single.php';
 require get_stylesheet_directory() . '/inc/woocommerce/checkout.php';
 require get_stylesheet_directory() . '/inc/woocommerce/quick-view.php';
 require get_stylesheet_directory() . '/inc/checkout.php';
+require get_stylesheet_directory() . '/tgm/example.php';
