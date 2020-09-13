@@ -41,11 +41,11 @@ function crb_attach_theme_options() {
           Field::make('image', 'product_hover_image', __('Product hover image')),
         ])
         ->add_tab(__('Tabs'), [
+          Field::make('rich_text', 'product_hover', __('Нанесение')),
           Field::make('rich_text', 'product_consist', __('Состав')),
           Field::make('rich_text', 'product_volume', __('Объем')),
           Field::make('rich_text', 'product_features', __('Особенности')),
 
-          //Field::make('rich_text', 'product_hover', __('Нанесение')),
           //Field::make('rich_text', 'product_volume', __("Объем")),
           //Field::make('rich_text', 'product_features', __('Особенности')),
           //Field::make('rich_text', 'product_clinic', __('Клинические испытания')),
@@ -74,7 +74,14 @@ function crb_attach_theme_options() {
           Field::make('select', 'product', __('Product'))->set_options('tarte_product_select'),
         ]),
 
-        Field::make('select', 'image_product_link', __('Image product link'))->set_options('tarte_product_select'),
+        // new exclusive
+        Field::make('text', 'front_page_exclusive_title', __('Exclusive products title')),
+        Field::make('text', 'front_page_exclusive_title_link', __('Exclusive products title link')),
+        Field::make('complex', 'front_page_exclusive', __('Exclusive products list'))
+        ->add_fields([
+          Field::make('select', 'product', __('Product'))->set_options('tarte_product_select'),
+        ]),
+
         Field::make("rich_text", 'image_product_content', __('Image product content')),
         Field::make('image', 'image_product_left', __('Product image left'))->set_value_type('url'),
         Field::make('image', 'image_product_right', __('Product image right'))->set_value_type('url'),

@@ -31,6 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             'categories',
             'admissions',
             'image',
+            'exclusive',
           ];
           foreach ($blocks as $block) {
             echo get_template_part('template-parts/frontpage', $block);
