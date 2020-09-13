@@ -57,3 +57,9 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 	$defaults['delimiter'] = ' / ';
 	return $defaults;
 }
+
+add_filter ( 'woocommerce_product_thumbnails_columns', 'bbloomer_change_gallery_columns' );
+ 
+function bbloomer_change_gallery_columns() {
+     return 1; 
+}

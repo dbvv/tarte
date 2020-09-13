@@ -1,4 +1,5 @@
-.woocommerce.single-product, .remodal {
+.woocommerce.single-product, .woocommerce .remodal {
+  
   .product{
     position: relative;
     [role="tablist"] {
@@ -38,9 +39,61 @@
     form.cart {
       margin-bottom: 0px;
     }
+    .woocommerce-product-gallery {
+      &.images {
+        a.woocommerce-product-gallery__trigger {
+          right: unset;
+          left: .5em;
+        }
+      }
+      .flex-viewport {
+        width: 87%;
+        float: left;
+      }
+      .flex-control-thumbs {
+        width: 10%;
+        float: left;
+        overflow-y: scroll;
+        max-height: 480px;
+        margin-left: 3%;
+        /* width */
+        &::-webkit-scrollbar {
+          width: 1px;
+        }
 
-    
-  }
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: white; 
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #fff; 
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+        li {
+          width: 100%;
+          margin-left: 6px;
+          margin-bottom: 10px;
+          img {
+            max-width: 43px;
+            float: none;
+            margin: 0 ;
+            border: 3px solid transparent;
+            transition: .3s all ease;
+            &.flex-active {
+              border-color: #808080;
+            }
+          }
+        }
+      }
+    }
+
+  } // .product
 }
 
 .product {
@@ -92,5 +145,13 @@
         font-size: 15px;
       }
     }
+    
   }
+
 }
+
+ 
+/* Style each Thumbnail with width and margins */
+ 
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
+    }
