@@ -53,8 +53,11 @@ function tarte_main_content() {
     $category = get_queried_object();
     $archive_title = carbon_get_term_meta($category->term_id, 'archive_title');
     $archive_pattern = carbon_get_term_meta($category->term_id, 'archive_pattern');
+
     if ($archive_title) {
-      $html = '<div class="archive-muster-title">' . $archive_title . '</div>';
+      $pattern = wp_get_attachment_image_url($archive_pattern, 'full');
+      $background = $archive_pattern ? "style=\"background-image: url($pattern)\"" : '';
+      $html = '<div class="archive-muster-title" ' . $background . '>' . $archive_title . '</div>';
       echo $html;
     }
   }

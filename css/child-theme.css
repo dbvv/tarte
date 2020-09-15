@@ -9863,6 +9863,15 @@ figure.woocommerce-product-gallery__wrapper {
   font-weight: 100;
   text-transform: lowercase;
   font-size: 50px; }
+  @media screen and (max-width: 576px) {
+    .woocommerce .archive-muster-title {
+      font-size: 15px;
+      min-height: 50px;
+      text-align: center;
+      padding: 20px 40px;
+      font-family: 'Gotham';
+      font-weight: 300;
+      margin-bottom: 50px; } }
 
 .woocommerce ul.products li.product img {
   width: auto; }
@@ -9904,22 +9913,25 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 0 auto; }
 
 @media screen and (max-width: 576px) {
-  .woocommerce ul.products li.product {
-    height: 100%;
-    min-height: 315px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 0px; }
-    .woocommerce ul.products li.product .woocommerce-loop-product__title {
-      min-height: 44px; } }
+  .woocommerce ul.products {
+    padding: 0 30px; }
+    .woocommerce ul.products li.product {
+      height: 100%;
+      min-height: 215px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-bottom: 0px;
+      margin-bottom: 20px !important; }
+      .woocommerce ul.products li.product .woocommerce-loop-product__title {
+        min-height: 44px; } }
 
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
   border-top-color: black; }
@@ -10129,6 +10141,8 @@ figure.woocommerce-product-gallery__wrapper {
 table.variations .tawcvs-swatches .swatch {
   width: 50px;
   height: 50px; }
+  table.variations .tawcvs-swatches .swatch img {
+    width: 50px; }
 
 .remodal {
   -webkit-box-shadow: none;
@@ -22486,6 +22500,15 @@ figure.woocommerce-product-gallery__wrapper {
   font-weight: 100;
   text-transform: lowercase;
   font-size: 50px; }
+  @media screen and (max-width: 576px) {
+    .woocommerce .archive-muster-title {
+      font-size: 15px;
+      min-height: 50px;
+      text-align: center;
+      padding: 20px 40px;
+      font-family: 'Gotham';
+      font-weight: 300;
+      margin-bottom: 50px; } }
 
 .woocommerce ul.products li.product img {
   width: auto; }
@@ -22527,22 +22550,25 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 0 auto; }
 
 @media screen and (max-width: 576px) {
-  .woocommerce ul.products li.product {
-    height: 100%;
-    min-height: 315px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 0px; }
-    .woocommerce ul.products li.product .woocommerce-loop-product__title {
-      min-height: 44px; } }
+  .woocommerce ul.products {
+    padding: 0 30px; }
+    .woocommerce ul.products li.product {
+      height: 100%;
+      min-height: 215px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-bottom: 0px;
+      margin-bottom: 20px !important; }
+      .woocommerce ul.products li.product .woocommerce-loop-product__title {
+        min-height: 44px; } }
 
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
   border-top-color: black; }
@@ -22752,6 +22778,8 @@ figure.woocommerce-product-gallery__wrapper {
 table.variations .tawcvs-swatches .swatch {
   width: 50px;
   height: 50px; }
+  table.variations .tawcvs-swatches .swatch img {
+    width: 50px; }
 
 .remodal {
   -webkit-box-shadow: none;
