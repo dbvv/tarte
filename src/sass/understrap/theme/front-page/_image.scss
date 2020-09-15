@@ -49,4 +49,13 @@
   .product-image-left {
     text-align: left;
   }
+  @media screen and (max-width: 576px) {
+    .image-content {
+      padding: 20px 40px;
+      h2, h3, h4 {
+        font-size: 27px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }

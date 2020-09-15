@@ -10526,9 +10526,11 @@
     responsive: {
       0: {
         items: 1,
+        nav: true,
       },
-      560: {
+      576: {
         items: 2,
+        nav: true,
       },
       960: {
         items: 3,
@@ -10560,6 +10562,6 @@
   $('button.navbar-toggler, button.mobile-nav__close-button').on('click', function (e) {
     $('.mobile-nav').toggleClass('open');
     $('body').toggleClass('stop-scroll');
-  })
+  });
 })(jQuery);
 

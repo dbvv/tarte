@@ -25240,7 +25240,7 @@ html, body {
         height: 40px;
         left: 0px;
         position: absolute;
-        top: 9px;
+        top: 12px;
         right: 0;
         background: transparent;
         font-size: 14px;
@@ -25271,6 +25271,8 @@ html, body {
   outline: none; }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0; }
   .common-header nav.navbar {
     position: absolute;
     top: 65px; }
@@ -25700,6 +25702,56 @@ body.stop-scroll {
       right: 0;
       position: absolute;
       top: -20px; }
+  @media screen and (max-width: 576px) {
+    .home .categories-block .category {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      .home .categories-block .category-image {
+        position: relative; }
+      .home .categories-block .category-content {
+        width: 100%;
+        text-align: center; }
+        .home .categories-block .category-content .category-title {
+          text-transform: uppercase;
+          font-size: 32px; }
+        .home .categories-block .category-content a.btn {
+          margin: 0 auto; } }
+
+@media screen and (max-width: 576px) {
+  .home .jumbotron {
+    min-height: unset; }
+    .home .jumbotron_title {
+      font-size: 13px;
+      line-height: 15px; }
+    .home .jumbotron_brand {
+      line-height: 16px;
+      font-size: 14px; }
+    .home .jumbotron_link {
+      width: 75px;
+      height: 20px;
+      font-size: 9px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      line-height: 10px;
+      min-height: unset;
+      min-width: unset;
+      margin-top: 10px; } }
 
 .frontpage-carousel-products {
   margin: 50px auto; }
@@ -25732,7 +25784,10 @@ body.stop-scroll {
     position: absolute;
     top: 30%;
     font-size: 30px;
-    color: black; }
+    color: black;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
     .frontpage-carousel-products button.owl-prev span, .frontpage-carousel-products button.owl-next span {
       font-size: 50px;
       color: #fff;
@@ -25741,6 +25796,14 @@ body.stop-scroll {
     right: -40px; }
   .frontpage-carousel-products button.owl-prev {
     left: -40px; }
+  @media screen and (max-width: 576px) {
+    .frontpage-carousel-products__title {
+      line-height: 39px;
+      font-size: 28px; }
+    .frontpage-carousel-products button.owl-next {
+      right: 0px; }
+    .frontpage-carousel-products button.owl-prev {
+      left: 0px; } }
 
 .frontpage-image {
   margin-top: 100px;
@@ -25791,6 +25854,12 @@ body.stop-scroll {
     text-align: right; }
   .frontpage-image .product-image-left {
     text-align: left; }
+  @media screen and (max-width: 576px) {
+    .frontpage-image .image-content {
+      padding: 20px 40px; }
+      .frontpage-image .image-content h2, .frontpage-image .image-content h3, .frontpage-image .image-content h4 {
+        font-size: 27px;
+        text-transform: uppercase; } }
 
 /*
 * Use existing Bootstrap 4 classes and

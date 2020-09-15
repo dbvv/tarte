@@ -104,7 +104,7 @@ html, body {
       height: 40px;;
       left: 0px;
       position: absolute;
-      top: 9px;
+      top: 12px;
       right: 0;
       background: transparent;
       font-size: 14px;
@@ -130,6 +130,9 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
   .common-header nav.navbar {
     position: absolute;
     top: 65px;

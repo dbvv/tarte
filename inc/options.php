@@ -86,7 +86,9 @@ function crb_attach_theme_options() {
 
         Field::make("rich_text", 'image_product_content', __('Image product content')),
         Field::make('image', 'image_product_left', __('Product image left'))->set_value_type('url'),
+        Field::make('image', 'image_product_left_mobile', __('Product image left mobile'))->set_value_type('url'),
         Field::make('image', 'image_product_right', __('Product image right'))->set_value_type('url'),
+        Field::make('image', 'image_product_right_mobile', __('Product image right mobile'))->set_value_type('url'),
       ]);
 }
 

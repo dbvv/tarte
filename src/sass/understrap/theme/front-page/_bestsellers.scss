@@ -38,6 +38,8 @@
     top: 30%;
     font-size: 30px;
     color: black;
+    outline: none;
+    box-shadow: none;
     span {
       font-size: 50px;
       color: #fff;
@@ -49,5 +51,17 @@
   }
   button.owl-prev {
     left: -40px;
+  }
+  @media screen and (max-width: 576px) {
+    &__title {
+      line-height: 39px;
+      font-size: 28px;
+    }
+    button.owl-next {
+      right: 0px;
+    }
+    button.owl-prev {
+      left: 0px;
+    }
   }
 }
