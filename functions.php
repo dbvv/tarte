@@ -30,6 +30,11 @@ function theme_enqueue_styles() {
 function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
     
+    register_sidebar([
+      'name' => __('Footer right'),
+      'id' => 'footer-right',
+    ]);
+
     // register nav menu
     register_nav_menu('footer-links', __('Footer'));
     register_nav_menu('mobile', __('Mobile menu'));

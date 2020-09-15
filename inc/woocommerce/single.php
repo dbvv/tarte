@@ -63,3 +63,11 @@ add_filter ( 'woocommerce_product_thumbnails_columns', 'bbloomer_change_gallery_
 function bbloomer_change_gallery_columns() {
      return 1; 
 }
+
+//add_filter( 'woocommerce_single_product_carousel_options', 'ud_update_woo_flexslider_options' );
+function ud_update_woo_flexslider_options( $options ) {
+  dump($options);
+
+    $options['controlNav'] = true;
+    return $options;
+}

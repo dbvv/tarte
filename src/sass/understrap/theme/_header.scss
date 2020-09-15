@@ -92,7 +92,7 @@ html, body {
   @media screen and (max-width: 576px) {
     font-size: 15px;
     position: absolute;
-    top: 60px;
+    top: 50px;
     padding: 4px 10px;
     right: 5px;
     svg {
@@ -135,7 +135,7 @@ html, body {
   }
   .common-header nav.navbar {
     position: absolute;
-    top: 65px;
+    top: 55px;
     button.navbar-toggler {
       padding-left: 25px;
       .navbar-toggler-icon {
@@ -143,5 +143,8 @@ html, body {
         height: 2em;
       }
     }
+  }
+  .header-notice {
+    font-size: 13px !important;
   }
 }

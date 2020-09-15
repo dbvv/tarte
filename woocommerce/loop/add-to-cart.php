@@ -19,9 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if (!is_front_page()) {
-  return;
-}
+return;
 
 global $product;
 
