@@ -11,7 +11,7 @@
     position: relative;
   }
   .image-content {
-    padding: 150px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,7 @@
     height: 100%;
     overflow: hidden;
     min-height: 600px;
+    max-height: 660px;
     img {
       height: 100%;
       width: auto;
@@ -45,6 +46,7 @@
   }
   .product-image-right {
     text-align: right;
+    justify-content: flex-end;
   }
   .product-image-left {
     text-align: left;
