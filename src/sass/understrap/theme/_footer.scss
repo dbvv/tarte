@@ -110,6 +110,16 @@ footer.site-footer {
   }
 }
 @media screen and (max-width: 576px) {
+  #wrapper-footer {
+    text-align: center;
+    .footer-socials {
+      margin: 20px auto;
+      justify-content: center;
+    }
+    * {
+      font-size: 16px;
+    }
+  }
   .footer-menu {
     display: none !important;
   }

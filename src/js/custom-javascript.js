@@ -42,6 +42,6 @@
   $('button.navbar-toggler, button.mobile-nav__close-button').on('click', function (e) {
     $('.mobile-nav').toggleClass('open');
     $('body').toggleClass('stop-scroll');
-  })
+  });
 })(jQuery);
 
