@@ -10110,6 +10110,9 @@ figure.woocommerce-product-gallery__wrapper {
       display: none; } }
 
 /* Style each Thumbnail with width and margins */
+.product-page-link {
+  margin-top: 20px; }
+
 .woocommerce span.onsale {
   background: #958176;
   color: #fff;
@@ -22747,6 +22750,9 @@ figure.woocommerce-product-gallery__wrapper {
       display: none; } }
 
 /* Style each Thumbnail with width and margins */
+.product-page-link {
+  margin-top: 20px; }
+
 .woocommerce span.onsale {
   background: #958176;
   color: #fff;

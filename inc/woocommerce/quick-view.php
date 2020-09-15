@@ -14,6 +14,12 @@ add_action( 'wcqv_product_data', 'woocommerce_template_single_price', 40);
 add_action( 'wcqv_product_data', 'woocommerce_template_single_excerpt', 50);
 add_action( 'wcqv_product_data', 'woocommerce_template_single_add_to_cart', 60);
 
-
+add_action('wcqv_product_data', 'tarte_quick_view_show_product_link', 65);
+function tarte_quick_view_show_product_link() {
+  global $product;
+  $link = get_permalink($product->get_id());
+  $title = __('Смотреть подробную информацию');
+  echo "<a class='product-page-link' href='$link'>$title</a>";
+}
 
 
