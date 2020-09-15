@@ -32,6 +32,7 @@ function add_child_theme_textdomain() {
     
     // register nav menu
     register_nav_menu('footer-links', __('Footer'));
+    register_nav_menu('mobile', __('Mobile menu'));
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 

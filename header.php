@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php endif; ?>
 
 					
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdowns" aria-controls="navbarNavDropdowns" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -90,6 +90,41 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
+
+      <div class="mobile-nav">
+        <button class="mobile-nav__close-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="close-large-icon"><path fill-rule="evenodd" d="M20 19.444l-2.08.559L10 11.365l-7.92 8.638-2.079-.559L8.699 10 .001.556 2.08 0 10 8.636 17.92 0 20 .556 11.301 10 20 19.444z"/></svg>
+
+        </button>
+        <div class="mobile-nav__content">
+          <!-- Your site title as branding in the menu -->
+					<?php if ( ! has_custom_logo() ) { ?>
+
+						<?php if ( is_front_page() && is_home() ) : ?>
+
+							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+
+						<?php else : ?>
+
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+
+						<?php endif; ?>
+
+
+					<?php } else {
+						the_custom_logo();
+					} ?><!-- end custom logo -->
+
+
+        <?php
+          wp_nav_menu([
+            'theme_location' => 'mobile',
+            'container_class' => 'mobile-menu-container',
+            'menu_class' => 'navbar-nav',
+          ])
+        ?>  
+        </div>
+      </div>
 
 		</nav><!-- .site-navigation -->
       	</div><!-- #wrapper-navbar end -->
