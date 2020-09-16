@@ -1,15 +1,15 @@
 <?php
-add_filter('woocommerce_checkout_fields', 'glossier_checkout_fields');
-function glossier_checkout_fields($fields) {
+add_filter('woocommerce_checkout_fields', 'tarte_checkout_fields');
+function tarte_checkout_fields($fields) {
   unset($fields['billing']['billing_company']);
   $fields['billing']['billing_address_2']['label'] = __('Квартира');
   $fields['order']['order_comments']['label'] = 'Вы можете добавить комментарий к своему заказу';
   return $fields;
 }
 
-add_filter('woocommerce_form_field_args','glossier_form_field_args',90,3);
+add_filter('woocommerce_form_field_args','tarte_form_field_args',90,3);
 
-function glossier_form_field_args( $args, $key, $value = null ) {
+function tarte_form_field_args( $args, $key, $value = null ) {
   if ($args['type'] != 'textarea') {
     $args['label_class'] = ['col-sm-5'];
     $args['class'][] = 'row justify-content-between';
@@ -21,8 +21,8 @@ function glossier_form_field_args( $args, $key, $value = null ) {
   return $args;
 }
 
-add_filter('woocommerce_form_field', 'glossier_form_field', 80, 4);
-function glossier_form_field($field, $key, $args, $value) {
+add_filter('woocommerce_form_field', 'tarte_form_field', 80, 4);
+function tarte_form_field($field, $key, $args, $value) {
   if ($args['type'] != 'textarea') {
     $replacements = [
       '<p' => '<div',
@@ -39,7 +39,7 @@ function glossier_form_field($field, $key, $args, $value) {
 }
 
 
-function glossier_cart_totals_shipping_method_label($method) {
+function tarte_cart_totals_shipping_method_label($method) {
   $label     = $method->get_label();
 	$has_cost  = 0 < $method->cost;
 	$hide_cost = ! $has_cost && in_array( $method->get_method_id(), array( 'free_shipping', 'local_pickup' ), true );

@@ -113,12 +113,16 @@
   }
 
   .product-name {
+    span.product_name {
+      max-width: 300px;
+    }
     img {
       width: auto;
       margin-right: 20px;
       max-width: 80px;
       min-width: 30px;
       height: auto;
+      float: left;
     }
   }
 

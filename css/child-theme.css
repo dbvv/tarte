@@ -9777,12 +9777,16 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-checkout .checkout-block {
   padding: 10px; }
 
+.woocommerce-checkout .product-name span.product_name {
+  max-width: 300px; }
+
 .woocommerce-checkout .product-name img {
   width: auto;
   margin-right: 20px;
   max-width: 80px;
   min-width: 30px;
-  height: auto; }
+  height: auto;
+  float: left; }
 
 .woocommerce-checkout .woocommerce-checkout-review-order-table thead {
   display: none; }
@@ -22429,12 +22433,16 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-checkout .checkout-block {
   padding: 10px; }
 
+.woocommerce-checkout .product-name span.product_name {
+  max-width: 300px; }
+
 .woocommerce-checkout .product-name img {
   width: auto;
   margin-right: 20px;
   max-width: 80px;
   min-width: 30px;
-  height: auto; }
+  height: auto;
+  float: left; }
 
 .woocommerce-checkout .woocommerce-checkout-review-order-table thead {
   display: none; }
