@@ -50,6 +50,17 @@
         font-size: 16px !important;
         transition: 0.2s all ease;
         color: #fff;
+        &.added {
+          position: relative;
+          &:before {
+            position: absolute;
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            top: 4px;
+            left: 10%;
+            color: #fff;
+          }
+        }
         &:hover {
           background-color: $bg-overlay-color-opacity;
         }
