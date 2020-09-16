@@ -42,7 +42,6 @@
         font-family: $font-family-secondary !important;
       }
       a.add_to_cart_button {
-        width: 218px;
         margin: 10px auto;
         display: block;
         background-color: $bg-overlay-color;
@@ -79,7 +78,6 @@
 
   @media screen and (max-width: 576px) {
     ul.products {
-      padding: 0 30px;
       li.product {
         height: 100%;
         min-height: 215px;

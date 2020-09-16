@@ -9907,7 +9907,6 @@ figure.woocommerce-product-gallery__wrapper {
   font-family: "forum", "serif", Helvetica !important; }
 
 .woocommerce ul.products li.product a.add_to_cart_button {
-  width: 218px;
   margin: 10px auto;
   display: block;
   background-color: #532d6b;
@@ -9938,25 +9937,23 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 0 auto; }
 
 @media screen and (max-width: 576px) {
-  .woocommerce ul.products {
-    padding: 0 30px; }
-    .woocommerce ul.products li.product {
-      height: 100%;
-      min-height: 215px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding-bottom: 0px;
-      margin-bottom: 20px !important; }
-      .woocommerce ul.products li.product .woocommerce-loop-product__title {
-        min-height: 44px; } }
+  .woocommerce ul.products li.product {
+    height: 100%;
+    min-height: 215px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0px;
+    margin-bottom: 20px !important; }
+    .woocommerce ul.products li.product .woocommerce-loop-product__title {
+      min-height: 44px; } }
 
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
   border-top-color: black; }
@@ -22572,7 +22569,6 @@ figure.woocommerce-product-gallery__wrapper {
   font-family: "forum", "serif", Helvetica !important; }
 
 .woocommerce ul.products li.product a.add_to_cart_button {
-  width: 218px;
   margin: 10px auto;
   display: block;
   background-color: #532d6b;
@@ -22603,25 +22599,23 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 0 auto; }
 
 @media screen and (max-width: 576px) {
-  .woocommerce ul.products {
-    padding: 0 30px; }
-    .woocommerce ul.products li.product {
-      height: 100%;
-      min-height: 215px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding-bottom: 0px;
-      margin-bottom: 20px !important; }
-      .woocommerce ul.products li.product .woocommerce-loop-product__title {
-        min-height: 44px; } }
+  .woocommerce ul.products li.product {
+    height: 100%;
+    min-height: 215px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0px;
+    margin-bottom: 20px !important; }
+    .woocommerce ul.products li.product .woocommerce-loop-product__title {
+      min-height: 44px; } }
 
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
   border-top-color: black; }
@@ -26023,6 +26017,19 @@ body.stop-scroll {
 
 .wpss_social_share_buttons {
   padding: 0 16px; }
+
+.delivery-height img {
+  height: 111px !important;
+  width: auto !important; }
+
+.page-template-page-info {
+  font-size: 20px; }
+  .page-template-page-info * {
+    font-family: "forum", "serif", Helvetica; }
+  .page-template-page-info .container {
+    max-width: 890px; }
+  .page-template-page-info h1, .page-template-page-info h2, .page-template-page-info h3, .page-template-page-info h4, .page-template-page-info h5, .page-template-page-info h6 {
+    text-align: center; }
 
 /*
 * Use existing Bootstrap 4 classes and

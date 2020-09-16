@@ -1,0 +1,17 @@
+.delivery-height img {
+  height: 111px !important;
+  width: auto !important;
+}
+
+.page-template-page-info {
+  font-size: 20px;
+  & * {
+    font-family: $font-family-secondary;
+  }
+  .container {
+    max-width: 890px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
