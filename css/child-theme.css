@@ -25702,14 +25702,14 @@ body.stop-scroll {
     font-family: 'Gotham';
     color: #532d6b;
     text-align: center;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5rem; }
   .home .jumbotron_brand {
     font-weight: 400;
     font-family: 'GothamBook';
     color: #FF43C4;
-    font-size: 56px;
+    font-size: 63px;
     line-height: 70px;
-    letter-spacing: 0.05px; }
+    letter-spacing: 0.05rem; }
   .home .jumbotron_link {
     background-color: #532d6b;
     color: #fff;
@@ -25824,10 +25824,12 @@ body.stop-scroll {
     min-height: unset; }
     .home .jumbotron_title {
       font-size: 13px;
-      line-height: 15px; }
+      line-height: 15px;
+      letter-spacing: unset; }
     .home .jumbotron_brand {
       line-height: 16px;
-      font-size: 14px; }
+      font-size: 14px;
+      letter-spacing: unset; }
     .home .jumbotron_link {
       width: 75px;
       height: 20px;

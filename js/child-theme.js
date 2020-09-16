@@ -10481,7 +10481,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-"use strict";!function(t){t.fn.stepper=function(s){var i=void 0,e=function(t,s,i){var e=void 0;return function(){var n=this,a=arguments,r=function(){e=null,i||t.apply(n,a)},o=i&&!e;clearTimeout(e),e=setTimeout(r,s),o&&t.apply(n,a)}},n=function(){try{return document.createEvent("TouchEvent"),!0}catch(t){return!1}},a=function(t){return(t.split(".")[1]||[]).length},r=function(){return""===t(this).val()?0:t(this).val()},o=function(){var s=t(this).closest(".js-spinner"),e=n()?"touchstart":"mousedown",a=this;s.find("[spinner-button]").on(e,function(){var s=t(this).attr("spinner-button");"up"===s?t.fn.stepper.increase.call(a):t.fn.stepper.decrease.call(a)}).on("mousedown",function(){var s=t(this).attr("spinner-button");t(this).data("timer",setTimeout(function(){i=setInterval(function(){"up"===s?t.fn.stepper.increase.call(a):t.fn.stepper.decrease.call(a)},60)},a.settings.debounce))}).on("mouseup",function(){clearTimeout(t(this).data("timer"))}),t(document).mouseup(function(){clearInterval(i)})};t.fn.stepper.increase=function(){var s=parseFloat(r.call(this));this.settings=t(this).data("settings");var i=a(this.settings.step),e=(s+parseFloat(this.settings.step)).toFixed(i),n=t(this).val();u.call(this,e,n)},t.fn.stepper.decrease=function(){var s=parseFloat(r.call(this));this.settings=t(this).data("settings");var i=a(this.settings.step),e=(s-parseFloat(this.settings.step)).toFixed(i),n=t(this).val();u.call(this,e,n)};var u=function(s,i){(s<=this.settings.max||"undefined"==typeof this.settings.max)&&(s>=this.settings.min||"undefined"==typeof this.settings.min)?(n()?t(this).val(s):t(this).val(s).focus(),c.call(this)):i>this.settings.max?t(this).val(this.settings.max):i<this.settings.min&&t(this).val(this.settings.min)},c=e(function(){t(this).trigger("change")},400);return this.each(function(){var i=this;this.settings=t.extend({step:t(this).is("[step]")?t(this).attr("step"):"1",min:t(this).is("[min]")?parseFloat(t(this).attr("min")):void 0,max:t(this).is("[max]")?parseFloat(t(this).attr("max")):void 0,debounce:t(this).is("[data-stepper-debounce]")?parseInt(t(this).attr("data-stepper-debounce")):400},s),this.init=function(){t(i).data("settings",i.settings),o.call(i)},this.init()})},t('input[type="number"]').stepper()}(jQuery);
 /**
  * File skip-link-focus-fix.js.
  *
@@ -10516,6 +10515,104 @@
 	}
 })();
 
+;(function ( $ ) {
+	'use strict';
+  console.log('Variations swithcer');
+
+	/**
+	 * @TODO Code a function that calculate available combination instead of use WC hooks
+	 */
+	$.fn.tawcvs_variation_swatches_form = function () {
+		return this.each( function() {
+			var $form = $( this );
+
+			$form
+				.addClass( 'swatches-support' )
+				.on( 'click', '.swatch', function ( e ) {
+					e.preventDefault();
+
+					var $el = $( this ),
+						$select = $el.closest( '.value' ).find( 'select' ),
+						value = $el.attr( 'data-value' );
+
+					if ( $el.hasClass( 'disabled' ) ) {
+						return;
+					}
+
+					// For old WC
+					$select.trigger( 'focusin' );
+
+					// Check if this combination is available
+					if ( ! $select.find( 'option[value="' + value + '"]' ).length ) {
+						$el.siblings( '.swatch' ).removeClass( 'selected' );
+						$select.val( '' ).change();
+						$form.trigger( 'tawcvs_no_matching_variations', [$el] );
+						return;
+					}
+
+					if ( $el.hasClass( 'selected' ) ) {
+						$select.val( '' );
+						$el.removeClass( 'selected' );
+					} else {
+						$el.addClass( 'selected' ).siblings( '.selected' ).removeClass( 'selected' );
+						$select.val( value );
+					}
+
+					$select.change();
+				} )
+				.on( 'click', '.reset_variations', function () {
+					$form.find( '.swatch.selected' ).removeClass( 'selected' );
+					$form.find( '.swatch.disabled' ).removeClass( 'disabled' );
+				} )
+        .on('change', 'select[name^="attribute"]', function (e) {
+          var value = $('select option:selected').val();
+          $('.swatch').removeClass('selected');
+          $('.swatch[data-value="' + value + '"]').addClass('selected');
+
+        })
+				.on( 'woocommerce_update_variation_values', function() {
+					setTimeout( function() {
+						$form.find( 'tbody tr' ).each( function() {
+							var $variationRow = $( this ),
+								$options = $variationRow.find( 'select' ).find( 'option' ),
+								$selected = $options.filter( ':selected' ),
+								values = [];
+
+							$options.each( function( index, option ) {
+								if ( option.value !== '' ) {
+									values.push( option.value );
+								}
+							} );
+
+							$variationRow.find( '.swatch' ).each( function() {
+								var $swatch = $( this ),
+									value = $swatch.attr( 'data-value' );
+
+								if ( values.indexOf( value ) > -1 ) {
+									$swatch.removeClass( 'disabled' );
+								} else {
+									$swatch.addClass( 'disabled' );
+
+									if ( $selected.length && value === $selected.val() ) {
+										$swatch.removeClass( 'selected' );
+									}
+								}
+							} );
+						} );
+					}, 100 );
+				} )
+				.on( 'tawcvs_no_matching_variations', function() {
+					window.alert( wc_add_to_cart_variation_params.i18n_no_matching_variations_text );
+				} );
+		} );
+	};
+
+	$( function () {
+		$( '.variations_form' ).tawcvs_variation_swatches_form();
+		$( document.body ).trigger( 'tawcvs_initialized' );
+	} );
+})( jQuery );
+
 // Add your custom JS here.
 (function ($) {
   $('.frontpage-carousel-products ul.products').addClass('owl-carousel').owlCarousel({
@@ -10526,11 +10623,9 @@
     responsive: {
       0: {
         items: 1,
-        nav: true,
       },
       576: {
         items: 2,
-        nav: true,
       },
       960: {
         items: 3,

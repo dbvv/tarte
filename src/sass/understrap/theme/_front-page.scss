@@ -19,15 +19,15 @@
       font-family: 'Gotham';
       color: $bg-overlay-color;
       text-align: center;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.5em;
     }
     &_brand {
       font-weight: 400;
       font-family: 'GothamBook';
       color: $pink-dark;
-      font-size: 56px;
+      font-size: 63px;
       line-height: 70px;
-      letter-spacing: 0.05px;
+      letter-spacing: 0.05em;
     }
     &_link {
       background-color: $bg-overlay-color;
@@ -123,16 +123,26 @@
       }
     }
   }
+  @media screen and (max-width: 1281px) and (min-width: 1024px) {
+    .jumbotron {
+      &_title {
+        font-size: 50px;
+        letter-spacing: 0.5em;
+      }
+    }
+  }
   @media screen and (max-width: 576px) {
     .jumbotron {
       min-height: unset;
       &_title {
         font-size: 13px;
         line-height: 15px;
+        letter-spacing: unset;
       }
       &_brand {
         line-height: 16px;
         font-size: 14px;
+        letter-spacing: unset;
       }
       &_link {
         width: 75px;
