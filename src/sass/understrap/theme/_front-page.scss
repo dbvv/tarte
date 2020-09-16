@@ -19,13 +19,13 @@
       font-family: 'Gotham';
       color: $bg-overlay-color;
       text-align: center;
-      letter-spacing: 0.5em;
+      letter-spacing: 0.1em;
     }
     &_brand {
       font-weight: 400;
       font-family: 'GothamBook';
       color: $pink-dark;
-      font-size: 63px;
+      font-size: 62px;
       line-height: 70px;
       letter-spacing: 0.05em;
     }
@@ -127,7 +127,10 @@
     .jumbotron {
       &_title {
         font-size: 50px;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.1em;
+      }
+      &_brand {
+        font-size: 52px;
       }
     }
   }

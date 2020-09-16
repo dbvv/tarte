@@ -25734,12 +25734,12 @@ body.stop-scroll {
     font-family: 'Gotham';
     color: #532d6b;
     text-align: center;
-    letter-spacing: 0.5em; }
+    letter-spacing: 0.1em; }
   .home .jumbotron_brand {
     font-weight: 400;
     font-family: 'GothamBook';
     color: #FF43C4;
-    font-size: 63px;
+    font-size: 62px;
     line-height: 70px;
     letter-spacing: 0.05em; }
   .home .jumbotron_link {
@@ -25854,7 +25854,9 @@ body.stop-scroll {
 @media screen and (max-width: 1281px) and (min-width: 1024px) {
   .home .jumbotron_title {
     font-size: 50px;
-    letter-spacing: 0.5em; } }
+    letter-spacing: 0.1em; }
+  .home .jumbotron_brand {
+    font-size: 52px; } }
 
 @media screen and (max-width: 576px) {
   .home .jumbotron {
