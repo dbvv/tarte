@@ -10109,9 +10109,9 @@ figure.woocommerce-product-gallery__wrapper {
     .product .woocommerce-product-gallery__trigger {
       display: none; } }
 
-/* Style each Thumbnail with width and margins */
 .product-page-link {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: block; }
 
 .woocommerce span.onsale {
   background: #958176;
@@ -22749,9 +22749,9 @@ figure.woocommerce-product-gallery__wrapper {
     .product .woocommerce-product-gallery__trigger {
       display: none; } }
 
-/* Style each Thumbnail with width and margins */
 .product-page-link {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: block; }
 
 .woocommerce span.onsale {
   background: #958176;
@@ -25493,8 +25493,12 @@ ul.products li.product a.woocommerce-LoopProduct-link {
   background-color: #fff;
   background-image: url("../img/ironpattern.png");
   padding: 20px 0; }
+  .footer-pattern .container {
+    max-width: 980px; }
   .footer-pattern *:not(.fa) {
     font-family: 'GothamBook'; }
+  .footer-pattern a {
+    color: black; }
 
 .footer-notice {
   text-align: center;
@@ -25532,18 +25536,22 @@ footer.site-footer ul.menu {
       color: #3d9be9; }
 
 footer.site-footer .about-info p {
-  margin: 5px; }
+  margin: 0 5px 5px 5px; }
 
 footer.site-footer .privacy-link {
   margin-top: 20px;
   color: black;
-  display: block; }
+  display: block;
+  font-size: 13px; }
   footer.site-footer .privacy-link:hover {
-    color: #3d9be9; }
+    color: #cea08a; }
 
 footer.site-footer .footer-text {
   font-size: 11px;
   margin-top: 60px; }
+  @media screen and (min-width: 1024px) {
+    footer.site-footer .footer-text {
+      max-width: 80%; } }
 
 footer.site-footer .footer-socials {
   margin-top: 20px;
@@ -25693,13 +25701,15 @@ body.stop-scroll {
     font-weight: 300;
     font-family: 'Gotham';
     color: #532d6b;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.5px; }
   .home .jumbotron_brand {
     font-weight: 400;
-    font-family: 'Gotham';
+    font-family: 'GothamBook';
     color: #FF43C4;
-    font-size: 62px;
-    line-height: 70px; }
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: 0.05px; }
   .home .jumbotron_link {
     background-color: #532d6b;
     color: #fff;
@@ -26009,7 +26019,7 @@ body.stop-scroll {
   margin-bottom: 0px; }
 
 #wrapper-footer .widget .widgettitle {
-  line-height: 26px;
+  line-height: 22px;
   font-size: 20px;
   font-weight: 400;
   font-family: 'GothamBook'; }

@@ -19,13 +19,15 @@
       font-family: 'Gotham';
       color: $bg-overlay-color;
       text-align: center;
+      letter-spacing: 0.5px;
     }
     &_brand {
       font-weight: 400;
-      font-family: 'Gotham';
+      font-family: 'GothamBook';
       color: $pink-dark;
-      font-size: 62px;
+      font-size: 56px;
       line-height: 70px;
+      letter-spacing: 0.05px;
     }
     &_link {
       background-color: $bg-overlay-color;

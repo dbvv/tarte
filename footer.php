@@ -42,10 +42,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 ]); ?>
                 
               </div>
-              <div class="col-sm-4 about-info">
+              <div class="col-sm-5 about-info">
                 <?php echo carbon_get_theme_option('about_info'); ?>
               </div>
-              <div class="col-sm-5">
+              <div class="col-sm-4">
                 <ul class="widgets footer-right">
                     <?php dynamic_sidebar('footer-right'); ?>
                 </ul>

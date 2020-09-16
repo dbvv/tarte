@@ -164,12 +164,7 @@
 
 }
 
- 
-/* Style each Thumbnail with width and margins */
- 
-.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
-    }
-
-    .product-page-link {
-      margin-top: 20px;
-    }
+.product-page-link {
+  margin-top: 20px;
+  display: block;
+}
