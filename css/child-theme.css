@@ -9683,7 +9683,16 @@ figure.woocommerce-product-gallery__wrapper {
 
 .woocommerce-checkout #place_order {
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+  background: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none; }
+  .woocommerce-checkout #place_order:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .woocommerce-checkout #payment {
   display: none; }
@@ -9691,6 +9700,8 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-checkout .checkout-container {
   border: 1px solid rgba(0, 0, 0, 0.7);
   margin-bottom: 20px; }
+  .woocommerce-checkout .checkout-container .required {
+    display: none; }
   .woocommerce-checkout .checkout-container__title {
     background: black;
     width: 100%;
@@ -9816,7 +9827,8 @@ figure.woocommerce-product-gallery__wrapper {
     font-size: 12px;
     padding: 8px 10px;
     border-radius: 0px;
-    margin-left: -1px !important; }
+    margin-left: -1px !important;
+    margin-top: -1px; }
     .woocommerce-checkout .checkout-qty .remove i {
       color: #fff; }
     .woocommerce-checkout .checkout-qty .remove:hover {
@@ -22323,7 +22335,16 @@ figure.woocommerce-product-gallery__wrapper {
 
 .woocommerce-checkout #place_order {
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+  background: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none; }
+  .woocommerce-checkout #place_order:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .woocommerce-checkout #payment {
   display: none; }
@@ -22331,6 +22352,8 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-checkout .checkout-container {
   border: 1px solid rgba(0, 0, 0, 0.7);
   margin-bottom: 20px; }
+  .woocommerce-checkout .checkout-container .required {
+    display: none; }
   .woocommerce-checkout .checkout-container__title {
     background: black;
     width: 100%;
@@ -22456,7 +22479,8 @@ figure.woocommerce-product-gallery__wrapper {
     font-size: 12px;
     padding: 8px 10px;
     border-radius: 0px;
-    margin-left: -1px !important; }
+    margin-left: -1px !important;
+    margin-top: -1px; }
     .woocommerce-checkout .checkout-qty .remove i {
       color: #fff; }
     .woocommerce-checkout .checkout-qty .remove:hover {
@@ -25702,14 +25726,14 @@ body.stop-scroll {
     font-family: 'Gotham';
     color: #532d6b;
     text-align: center;
-    letter-spacing: 0.5rem; }
+    letter-spacing: 0.5em; }
   .home .jumbotron_brand {
     font-weight: 400;
     font-family: 'GothamBook';
     color: #FF43C4;
     font-size: 63px;
     line-height: 70px;
-    letter-spacing: 0.05rem; }
+    letter-spacing: 0.05em; }
   .home .jumbotron_link {
     background-color: #532d6b;
     color: #fff;
@@ -25818,6 +25842,11 @@ body.stop-scroll {
           font-size: 32px; }
         .home .categories-block .category-content a.btn {
           margin: 0 auto; } }
+
+@media screen and (max-width: 1281px) and (min-width: 1024px) {
+  .home .jumbotron_title {
+    font-size: 50px;
+    letter-spacing: 0.5em; } }
 
 @media screen and (max-width: 576px) {
   .home .jumbotron {

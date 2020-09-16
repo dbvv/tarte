@@ -86,6 +86,11 @@ function tarte_register_required_plugins() {
       'slug' => 'woo-quick-view',
     ],
 
+    [
+      'name' => 'Qty Increment Buttons for WooCommerce',
+      'slug' => 'qty-increment-buttons-for-woocommerce',
+    ],
+
 	);
 
 	/*

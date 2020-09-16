@@ -10,6 +10,14 @@
   #place_order {
     width: 100%;
     border-radius: 0;
+    background: black;
+    transition: all 0.2s ease;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    &:hover {
+      background-color: rgba(black, 0.8);
+    }
   }
   
   #payment {
@@ -18,6 +26,9 @@
   .checkout-container {
     border: 1px solid $black;
     margin-bottom: 20px;
+    .required {
+      display: none;
+    }
     &__title {
       background: black;
       width: 100%;
@@ -143,6 +154,7 @@
       padding: 8px 10px;
       border-radius: 0px;
       margin-left: -1px !important;
+      margin-top: -1px;
       i {
         color: #fff;
       }
