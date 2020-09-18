@@ -1,6 +1,6 @@
 <?php
 
-function glossier_add_quantity($product_title, $cart_item, $cart_item_key) {
+function tarte_add_quantity($product_title, $cart_item, $cart_item_key) {
   /* Checkout page check */
   if (  is_checkout() ) {
     /* Get Cart of the user */
@@ -55,7 +55,7 @@ function glossier_add_quantity($product_title, $cart_item, $cart_item_key) {
     return $return_value;
   }
 }
-add_filter('woocommerce_cart_item_name', 'glossier_add_quantity', 10, 3);
+add_filter('woocommerce_cart_item_name', 'tarte_add_quantity', 10, 3);
 
 function remove_quantity_text( $cart_item, $cart_item_key ) {
    $product_quantity = 'aaa';
@@ -79,8 +79,8 @@ function update_order_review() {
   wp_die();
 }
 
-add_filter('woocommerce_update_order_review_fragments', 'glossier_update_order_review_fragments');
-function glossier_update_order_review_fragments($fragments) {
+add_filter('woocommerce_update_order_review_fragments', 'tarte_update_order_review_fragments');
+function tarte_update_order_review_fragments($fragments) {
   $fragments['.shopping-cart-count'] = '<div class="shopping-cart-count">' . WC()->cart->cart_contents_count . '</div>';
   return $fragments;
 }

@@ -25561,79 +25561,80 @@ ul.products li.product a.woocommerce-LoopProduct-link {
     .footer-notice p:last-child {
       margin-bottom: 0px; }
 
-footer.site-footer ul.menu {
-  list-style-type: none;
-  color: black;
-  padding-left: 0px; }
-  footer.site-footer ul.menu li {
-    margin: 0; }
-    footer.site-footer ul.menu li a {
-      color: black;
-      font-size: 15px;
-      line-height: 27px;
-      font-weight: 400;
-      font-family: 'GothamBook'; }
-      footer.site-footer ul.menu li a:hover {
-        text-decoration: none;
+footer.site-footer {
+  max-width: 929px;
+  margin: 0 auto; }
+  footer.site-footer ul.menu {
+    list-style-type: none;
+    color: black;
+    padding-left: 0px; }
+    footer.site-footer ul.menu li {
+      margin: 0; }
+      footer.site-footer ul.menu li a {
+        color: black;
+        font-size: 15px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: 'GothamBook'; }
+        footer.site-footer ul.menu li a:hover {
+          text-decoration: none;
+          color: #3d9be9; }
+      footer.site-footer ul.menu li.current-menu-item a {
         color: #3d9be9; }
-    footer.site-footer ul.menu li.current-menu-item a {
-      color: #3d9be9; }
-
-footer.site-footer .about-info p {
-  margin: 0 5px 5px 5px; }
-
-footer.site-footer .privacy-link {
-  margin-top: 20px;
-  color: black;
-  display: block;
-  font-size: 13px; }
-  footer.site-footer .privacy-link:hover {
-    color: #cea08a; }
-
-footer.site-footer .footer-text {
-  font-size: 11px;
-  margin-top: 60px; }
-  @media screen and (min-width: 1024px) {
-    footer.site-footer .footer-text {
-      max-width: 80%; } }
-
-footer.site-footer .footer-socials {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  footer.site-footer .footer-socials a {
-    width: 33px;
-    height: 33px;
+  footer.site-footer .about-info p {
+    margin: 0 5px 5px 5px; }
+  footer.site-footer .privacy-link {
+    margin-top: 20px;
+    color: black;
+    display: block;
+    font-size: 13px; }
+    footer.site-footer .privacy-link:hover {
+      color: #cea08a; }
+  footer.site-footer .footer-text {
+    font-size: 11px;
+    margin-top: 60px; }
+    @media screen and (min-width: 1024px) {
+      footer.site-footer .footer-text {
+        max-width: 80%; } }
+    @media screen and (max-width: 576px) {
+      footer.site-footer .footer-text {
+        font-size: 5px !important; } }
+  footer.site-footer .footer-socials {
+    margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #fff;
-    margin-right: 10px;
-    background: #949494;
-    border-radius: 50%;
-    font-size: 18px; }
-
-footer.site-footer .footer-info {
-  text-align: center; }
-  footer.site-footer .footer-info *:not(.fa) {
-    font-family: 'GothamBook'; }
+            flex-direction: row; }
+    footer.site-footer .footer-socials a {
+      width: 33px;
+      height: 33px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      color: #fff;
+      margin-right: 10px;
+      background: #949494;
+      border-radius: 50%;
+      font-size: 18px; }
+  footer.site-footer .footer-info {
+    text-align: center; }
+    footer.site-footer .footer-info *:not(.fa) {
+      font-family: 'GothamBook'; }
 
 .footer-info-content p {
   font-size: 14px !important;
@@ -25855,7 +25856,9 @@ body.stop-scroll {
       .home .categories-block .category-image {
         position: relative;
         width: 100%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3); }
       .home .categories-block .category-content {
         width: 100%;
         text-align: center; }
@@ -25875,14 +25878,20 @@ body.stop-scroll {
 @media screen and (max-width: 576px) {
   .home .jumbotron {
     min-height: unset; }
+    .home .jumbotron-content {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      padding-right: 0px; }
     .home .jumbotron_title {
       font-size: 13px;
       line-height: 15px;
       letter-spacing: unset; }
     .home .jumbotron_brand {
       line-height: 16px;
-      font-size: 14px;
-      letter-spacing: unset; }
+      font-size: 13px;
+      letter-spacing: unset;
+      margin-right: -10%; }
     .home .jumbotron_link {
       width: 75px;
       height: 20px;
@@ -25906,7 +25915,10 @@ body.stop-scroll {
       margin-top: 10px; } }
 
 .frontpage-carousel-products {
-  margin: 50px auto; }
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto; }
   .frontpage-carousel-products h3 {
     text-align: center;
     font-size: 30px;
@@ -25921,16 +25933,16 @@ body.stop-scroll {
     .frontpage-carousel-products__title:hover {
       color: #cea08a;
       text-decoration: none; }
-  .frontpage-carousel-products li.product {
+  .frontpage-carousel-products ul.products li.product {
     width: 100% !important;
     margin: 0 auto;
     padding: 10px !important; }
-    .frontpage-carousel-products li.product img {
+    .frontpage-carousel-products ul.products li.product img {
       max-height: 218px;
       max-width: 218px;
       margin: 20px auto !important;
       text-align: center; }
-    .frontpage-carousel-products li.product span.price {
+    .frontpage-carousel-products ul.products li.product span.price {
       line-height: 2rem; }
   .frontpage-carousel-products button.owl-prev, .frontpage-carousel-products button.owl-next {
     position: absolute;
@@ -25958,7 +25970,7 @@ body.stop-scroll {
       left: 0px; } }
 
 .frontpage-image {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-right: -15px;
   margin-left: -15px;
   text-align: center;
@@ -26002,7 +26014,8 @@ body.stop-scroll {
     .frontpage-image .product-image-right img, .frontpage-image .product-image-left img {
       height: 100%;
       width: auto;
-      max-width: 350px; }
+      max-width: 350px;
+      min-height: 600px; }
   .frontpage-image .product-image-right {
     text-align: right;
     -webkit-box-pack: end;
@@ -26014,7 +26027,7 @@ body.stop-scroll {
     .frontpage-image .image-content {
       padding: 20px 40px; }
       .frontpage-image .image-content h2, .frontpage-image .image-content h3, .frontpage-image .image-content h4 {
-        font-size: 27px;
+        font-size: 34px;
         text-transform: uppercase; } }
 
 .wpss_social_share_buttons {

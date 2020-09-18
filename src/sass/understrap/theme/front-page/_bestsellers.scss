@@ -1,5 +1,10 @@
 .frontpage-carousel-products {
-  margin: 50px auto;
+  margin:  {
+    top: 20px;
+    bottom: 0px;
+    left: auto;
+    right: auto;
+  }
   h3 {
     text-align: center;
     font-size: 30px;
@@ -18,7 +23,8 @@
 
     }
   }
-  li.product {
+  ul.products {
+li.product {
     width: 100% !important;
     margin: 0 auto;
     padding: 10px !important;
@@ -33,6 +39,8 @@
 
     }
   }
+  }
+  
   button.owl-prev, button.owl-next {
     position: absolute;
     top: 30%;

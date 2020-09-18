@@ -38,6 +38,8 @@
   }
 }
 footer.site-footer {
+  max-width: 929px;
+  margin: 0 auto;
   
   ul.menu {
     list-style-type: none;
@@ -82,6 +84,9 @@ footer.site-footer {
     margin-top: 60px;
     @media screen and (min-width: 1024px) {
       max-width: 80%;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 5px !important;
     }
   }
   .footer-socials {
