@@ -25853,7 +25853,9 @@ body.stop-scroll {
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
       .home .categories-block .category-image {
-        position: relative; }
+        position: relative;
+        width: 100%;
+        margin: 0 auto; }
       .home .categories-block .category-content {
         width: 100%;
         text-align: center; }
