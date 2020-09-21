@@ -43,6 +43,16 @@
         color: rgba(#fff, 0.7);
       }
     }
+    .qib-container {
+      margin-bottom: 20px;
+      .qib-button {
+        display: none !important;
+      }
+      input.qty {
+        border: 1px solid black !important;
+      }
+    }
+
     form.cart {
       margin-bottom: 0px;
     }

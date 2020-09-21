@@ -85,6 +85,9 @@ footer.site-footer {
     @media screen and (min-width: 1024px) {
       max-width: 80%;
     }
+    @media screen and (min-width: 576px) {
+      margin-left: 11%;
+    }
     @media screen and (max-width: 576px) {
         font-size: 5px !important;
     }

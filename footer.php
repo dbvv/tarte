@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-            <div class="row">
+            <div class="row justify-content-end">
               <div class="col-sm-3 footer-menu">
                 <?php wp_nav_menu([
                     'theme_location' => 'footer-links',
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 ]); ?>
                 
               </div>
-              <div class="col-sm-5 about-info">
+              <div class="col-sm-4 about-info">
                 <?php echo carbon_get_theme_option('about_info'); ?>
               </div>
               <div class="col-sm-4">
